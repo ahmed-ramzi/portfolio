@@ -18,7 +18,9 @@
           </div>
           <nav>
             <ul>
-              <li v-for="l in navLinks" :key="l.key">{{ l.value }}</li>
+              <li v-for="l in navLinks" :key="l.key">
+                <span>{{ l.value }}</span>
+              </li>
             </ul>
           </nav>
         </section>
@@ -54,12 +56,15 @@ ul {
   @apply space-y-10;
 }
 li {
-  @apply font-caros-light cursor-pointer uppercase;
+  @apply rounded-full px-6 max-w-min;
 }
 
 li:hover {
-  /* @apply text-primary-green bg-white rounded-full border border-primary-green; */
-  @apply text-primary-green;
+  @apply ring-4 ring-primary-green text-primary-green duration-300 cursor-pointer;
+}
+
+li > span {
+  @apply font-caros-light  cursor-pointer uppercase ring-8 ring-white;
 }
 
 address {

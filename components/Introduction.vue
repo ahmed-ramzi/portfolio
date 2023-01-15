@@ -6,7 +6,7 @@
           <h1>Hey There, <br />I'm Ramzi</h1>
         </div>
         <div>
-          <h3>I develope bueatiful things, <br />and I love what I do.</h3>
+          <h4>I develope bueatiful things, <br />and I love what I do.</h4>
         </div>
       </section>
 
@@ -19,10 +19,10 @@
           <h1>3</h1>
         </div>
         <div class="uppercase">
-          <h3>
+          <h4>
             Years <br />
             Experience
-          </h3>
+          </h4>
         </div>
       </div>
     </div>

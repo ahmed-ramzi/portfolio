@@ -6,7 +6,9 @@
       </section>
       <section>
         <ul>
-          <li v-for="l in navLinks" :key="l.key">{{ l.value }}</li>
+          <li v-for="l in navLinks" :key="l.key">
+            <span>{{ l.value }}</span>
+          </li>
         </ul>
       </section>
       <section class="call-me">
@@ -29,11 +31,18 @@ nav {
   @apply flex items-center justify-between max-w-screen-xl mx-auto lg:px-4 py-4;
 }
 ul {
-  @apply flex items-center gap-24;
+  @apply flex items-center gap-12;
 }
 li {
-  @apply font-caros-light cursor-pointer uppercase hover:text-primary-green;
-  cursor: pointer;
+  @apply rounded-full px-6;
+}
+
+li:hover {
+  @apply ring-4 ring-primary-green text-primary-green duration-300 cursor-pointer;
+}
+
+li > span {
+  @apply font-caros-light  cursor-pointer uppercase bg-primary-beige ring-8 ring-primary-beige;
 }
 
 .call-me {
