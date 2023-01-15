@@ -2,16 +2,16 @@
   <header>
     <nav>
       <section>
-        <Icon name="dopis" />
+        <Icon name="dopis" class="cursor-pointer" />
       </section>
-      <section class="links">
-        <ul v-for="l in navLinks" :key="l.key">
-          <li class="uppercase">{{ l.value }}</li>
+      <section>
+        <ul>
+          <li v-for="l in navLinks" :key="l.key">{{ l.value }}</li>
         </ul>
       </section>
       <section class="call-me">
-        <p>+420 732 727 074</p>
-        <div class="bg-white w-10 h-10 rounded-full shadow-lg"></div>
+        <p class="underline hover:text-primary-green cursor-pointer">+420 732 727 074</p>
+        <div class="bg-white w-10 h-10 rounded-full shadow-"></div>
       </section>
     </nav>
   </header>
@@ -23,21 +23,19 @@ const navLinks = useNavLinks()
 
 <style scoped>
 header {
-  @apply bg-primary-beige;
+  @apply bg-primary-beige sticky z-20;
 }
 nav {
   @apply flex items-center justify-between max-w-screen-xl mx-auto lg:px-4 py-4;
 }
-.links {
+ul {
   @apply flex items-center gap-24;
 }
 li {
-  @apply font-caros-light cursor-pointer;
+  @apply font-caros-light cursor-pointer uppercase hover:text-primary-green;
+  cursor: pointer;
 }
 
-li:hover {
-  @apply text-primary-green;
-}
 .call-me {
   @apply flex items-center gap-5;
 }

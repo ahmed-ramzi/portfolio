@@ -1,15 +1,12 @@
 <template>
   <main>
-    <div class="absolute bottom-0 w-full flex justify-center">
-      <img src="~/assets/images/splash-profile.png" alt="Ahmed Ramzi" width="800" />
-    </div>
     <div class="root">
       <section class="welcome">
         <div>
           <h1>Hey There, <br />I'm Ramzi</h1>
         </div>
         <div>
-          <h3>I develope bueatiful things, <br />And I love what I do.</h3>
+          <h3>I develope bueatiful things, <br />and I love what I do.</h3>
         </div>
       </section>
 
@@ -30,6 +27,9 @@
       </div>
     </div>
   </main>
+  <div class="relative w-full flex justify-center">
+    <img src="~/assets/images/splash-profile.png" alt="Ahmed Ramzi" width="800" height="600" class="absolute z-0 bottom-0" />
+  </div>
 </template>
 
 <style scoped>
