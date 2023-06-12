@@ -4,8 +4,8 @@
       <Icon :name="icon" class="text-white w-6 h-6" />
     </div>
     <div class="category">
-      <label class="font-caros-bold">{{ label }}</label>
-      <p class="leading-3 text-gray-500 text-xs">{{ skills }} skills</p>
+      <label class="font-caros-bold text-xl text-slate-600">{{ label }}</label>
+      <p class="leading-3 text-gray-500">{{ skills }} skills</p>
     </div>
   </section>
 </template>
@@ -41,9 +41,12 @@ const color = computed(() => {
 
 <style scoped>
 section {
-  @apply w-full py-5 flex  px-9 items-center gap-3 border shadow-xl rounded-md flex-shrink-0 cursor-pointer hover:bg-primary-beige;
+  @apply w-full py-5 flex  px-9 items-center gap-3 border hover:shadow-xl rounded-md flex-shrink-0 hover:bg-primary-beige duration-300;
 }
 .round-icon {
-  @apply rounded-full w-12 h-12 flex justify-center items-center;
+  @apply rounded-full w-16 h-16 flex justify-center items-center;
+}
+* {
+  @apply cursor-pointer;
 }
 </style>

@@ -1,7 +1,7 @@
 <template>
   <main>
-    <section>
-      <div class="space-y-3 flex-shrink-0 w-1/4">
+    <section class="skills-container">
+      <div class="space-y-3 flex-shrink-0">
         <WhatIDoCategory
           v-for="(c, index) in categories"
           :key="c.id"
@@ -16,10 +16,10 @@
       <div class="w-full space-y-3 px-8">
         <h1>What I Can Do?</h1>
         <p v-html="categories[selected].description"></p>
-        <div>
+        <div class="space-y-2">
           <h2>Tech stacks</h2>
           <div class="flex items-center gap-5">
-            <Icon v-for="icon in categories[selected].techStacks" :key="icon.id" :name="icon.id" class="w-16 h-16" />
+            <Icon v-for="icon in categories[selected].techStacks" :key="icon.id" :name="icon.id" class="w-16 h-16 cursor-pointer hover:drop-shadow-md" />
           </div>
         </div>
       </div>
@@ -76,6 +76,10 @@ const categories: Category[] = [
         id: "tailwind",
         name: "Tailwind Css",
       },
+      {
+        id: "typescript",
+        name: "Typescript",
+      },
     ],
   },
   {
@@ -91,12 +95,20 @@ const categories: Category[] = [
     },
     techStacks: [
       {
-        id: "vite",
-        name: "Vite Dev",
+        id: "typescript",
+        name: "Typescript",
       },
       {
-        id: "pinia",
-        name: "Pinia Store Manager",
+        id: "express",
+        name: "Express JS",
+      },
+      {
+        id: "firebase",
+        name: "Firebase (Firestore)",
+      },
+      {
+        id: "mongo",
+        name: "Mongo DB",
       },
     ],
   },
@@ -112,8 +124,16 @@ const categories: Category[] = [
     },
     techStacks: [
       {
-        id: "pinia",
-        name: "Pinia Store Manager",
+        id: "cypress",
+        name: "Cypress e2e",
+      },
+      {
+        id: "vitest",
+        name: "Vitest",
+      },
+      {
+        id: "postman",
+        name: "Postman",
       },
     ],
   },
@@ -124,7 +144,7 @@ const categories: Category[] = [
 main {
   @apply margin py-16;
 }
-section {
-  @apply flex gap-3 max-xl:px-4;
+section.skills-container {
+  @apply flex gap-24 max-xl:px-4;
 }
 </style>

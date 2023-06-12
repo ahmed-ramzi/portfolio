@@ -12,7 +12,7 @@
         </ul>
       </section>
       <section class="call-me">
-        <p class="hover:underline hover:text-primary-green cursor-pointer font-caros-regular font-medium">+420 732 727 074</p>
+        <p class="hover:underline hover:text-primary-green cursor-pointer font-caros-regular font-medium text-gray-500">+420 732 727 074</p>
         <div class="bg-white w-10 h-10 rounded-full shadow-lg flex justify-center items-center">
           <Icon name="telephone" class="w-5 h-5 text-primary-green" />
         </div>
