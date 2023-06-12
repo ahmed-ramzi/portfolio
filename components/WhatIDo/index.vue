@@ -1,0 +1,130 @@
+<template>
+  <main>
+    <section>
+      <div class="space-y-3 flex-shrink-0 w-1/4">
+        <WhatIDoCategory
+          v-for="(c, index) in categories"
+          :key="c.id"
+          @click="selected = index"
+          :icon="c.icon.id"
+          :design="c.icon.color"
+          :label="c.label"
+          :skills="c.techStacks.length"
+          :class="selected === index ? c.class : null"
+        />
+      </div>
+      <div class="w-full space-y-3 px-8">
+        <h1>What I Can Do?</h1>
+        <p v-html="categories[selected].description"></p>
+        <div>
+          <h2>Tech stacks</h2>
+          <div class="flex items-center gap-5">
+            <Icon v-for="icon in categories[selected].techStacks" :key="icon.id" :name="icon.id" class="w-16 h-16" />
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</template>
+
+<script setup lang="ts">
+import { IconName } from "~/types/types"
+import Category from "./Category.vue"
+
+type Category = {
+  id: string
+  label: string
+  description: string
+  class: string
+  icon: {
+    id: IconName
+    color: "green" | "red" | "yellow" | "beige"
+  }
+  techStacks: {
+    id: IconName
+    name: string
+  }[]
+}
+
+const selected = ref(0)
+
+const categories: Category[] = [
+  {
+    id: "frontend",
+    label: "Frontend Frameworks",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrudexercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nullapariatur.<br /><br />Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    class: "ring ring-primary-green",
+    icon: {
+      id: "monitor",
+      color: "green",
+    },
+    techStacks: [
+      {
+        id: "vue",
+        name: "Vue.Js",
+      },
+      {
+        id: "vite",
+        name: "Vite Dev",
+      },
+      {
+        id: "pinia",
+        name: "Pinia Store Manager",
+      },
+      {
+        id: "tailwind",
+        name: "Tailwind Css",
+      },
+    ],
+  },
+  {
+    id: "server",
+    label: "Backend Projects",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrudexercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nullapariatur.<br /><br />Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    class: "ring ring-primary-red",
+
+    icon: {
+      id: "server",
+      color: "red",
+    },
+    techStacks: [
+      {
+        id: "vite",
+        name: "Vite Dev",
+      },
+      {
+        id: "pinia",
+        name: "Pinia Store Manager",
+      },
+    ],
+  },
+  {
+    id: "testing",
+    label: "QA Expertise",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrudexercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nullapariatur.<br /><br />Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    class: "ring ring-primary-yellow",
+    icon: {
+      id: "test",
+      color: "yellow",
+    },
+    techStacks: [
+      {
+        id: "pinia",
+        name: "Pinia Store Manager",
+      },
+    ],
+  },
+]
+</script>
+
+<style scoped>
+main {
+  @apply margin py-16;
+}
+section {
+  @apply flex gap-3 max-xl:px-4;
+}
+</style>

@@ -3,8 +3,9 @@
 </template>
 
 <script lang="ts" setup>
+import { IconName } from "~/types/types"
 const props = defineProps<{
-  name: string
+  name: IconName
 }>()
 
 const iconComponent = computed(() => {

@@ -5,3 +5,19 @@ export type Review = {
   company: string
   comment: string
 }
+
+export type IconName =
+  | "dopis"
+  | "monitor"
+  | "server"
+  | "test"
+  | "profile"
+  | "telephone"
+  | "chevron-right"
+  | "chevron-left"
+  | "vue"
+  | "tailwind"
+  | "vite"
+  | "pinia"
+  | "express"
+  | "typescript"

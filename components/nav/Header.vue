@@ -12,8 +12,10 @@
         </ul>
       </section>
       <section class="call-me">
-        <p class="underline hover:text-primary-green cursor-pointer">+420 732 727 074</p>
-        <div class="bg-white w-10 h-10 rounded-full shadow-"></div>
+        <p class="hover:underline hover:text-primary-green cursor-pointer font-caros-regular font-medium">+420 732 727 074</p>
+        <div class="bg-white w-10 h-10 rounded-full shadow-lg flex justify-center items-center">
+          <Icon name="telephone" class="w-5 h-5 text-primary-green" />
+        </div>
       </section>
     </nav>
   </header>
@@ -34,11 +36,11 @@ ul {
   @apply flex items-center gap-12;
 }
 li {
-  @apply rounded-full px-6;
+  @apply rounded-full px-6 duration-500;
 }
 
 li:hover {
-  @apply ring-4 ring-primary-green text-primary-green duration-300 cursor-pointer;
+  @apply ring-4 ring-primary-green text-primary-green cursor-pointer;
 }
 
 li > span {
