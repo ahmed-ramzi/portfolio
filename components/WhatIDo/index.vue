@@ -19,7 +19,9 @@
         <div class="space-y-2">
           <h2>Tech stacks</h2>
           <div class="flex items-center gap-5">
-            <Icon v-for="icon in categories[selected].techStacks" :key="icon.id" :name="icon.id" class="w-16 h-16 cursor-pointer hover:drop-shadow-md" />
+            <div v-for="icon in categories[selected].techStacks" :key="icon.id" class="relative">
+              <Icon :name="icon.id" class="w-16 h-16 cursor-pointer hover:drop-shadow-md" />
+            </div>
           </div>
         </div>
       </div>
@@ -142,7 +144,7 @@ const categories: Category[] = [
 
 <style scoped>
 main {
-  @apply margin py-16;
+  @apply margin spacing;
 }
 section.skills-container {
   @apply flex gap-24 max-xl:px-4;

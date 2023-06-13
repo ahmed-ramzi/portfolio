@@ -1,17 +1,10 @@
 <template>
-  <main>
-    <div>
-      <div class="margin">
-        <section class="text-center space-y-6 max-w-xl">
-          <h2>People Talk About Me</h2>
-          <p>I always wanted my work to be part of a bigger self to make people's daily lives and complex app simple to use</p>
-        </section>
-      </div>
-
+  <CommonMainFrame>
+    <template #title>People Talk About Me</template>
+    <template #description>I always wanted my work to be part of a bigger self to make people's daily lives and complex app simple to use</template>
+    <template #no-margin>
       <section id="reviews-container">
-        <div v-for="(review, index) in reviews" :key="index + 1" :id="index + 1 === currentCard ? 'current-review' : ''">
-          <PeoplesReviewCard :review="review" />
-        </div>
+        <div v-for="(review, index) in reviews" :key="index + 1" :id="index + 1 === currentCard ? 'current-review' : ''"><PeoplesReviewCard :review="review" /></div>
       </section>
 
       <!-- <div class="margin">
@@ -24,8 +17,8 @@
           </button>
         </section>
       </div> -->
-    </div>
-  </main>
+    </template>
+  </CommonMainFrame>
 </template>
 
 <script lang="ts" setup>
@@ -116,12 +109,6 @@ watch(
 </script>
 
 <style scoped>
-main {
-  @apply bg-primary-beige;
-}
-main > div {
-  @apply py-16 flex flex-col items-center justify-center;
-}
 #reviews-container {
   @apply flex gap-10  w-full py-16 overflow-scroll px-10;
   -ms-overflow-style: none; /* Internet Explorer 10+ */

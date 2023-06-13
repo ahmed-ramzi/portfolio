@@ -1,8 +1,8 @@
 <template>
-  <NavHeader />
-  <Introduction />
-  <WhatIDo />
-  <PeoplesReview />
-  <NavFooter />
-  <!-- <Breakpoints /> -->
+  <NuxtLayout>
+    <Introduction />
+    <WhatIDo />
+    <WorkExperince class="border" />
+    <PeoplesReview />
+  </NuxtLayout>
 </template>

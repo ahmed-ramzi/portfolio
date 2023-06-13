@@ -6,6 +6,15 @@ export type Review = {
   comment: string
 }
 
+export type JobExperince = {
+  title: string
+  period: string
+  company: "Dataddo" | "KidoCode" | "SEGi University"
+  description: string
+  loaction: string
+  color: "green" | "red" | "yellow"
+}
+
 export type IconName =
   | "dopis"
   | "monitor"
