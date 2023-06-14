@@ -41,10 +41,13 @@ const color = computed(() => {
 
 <style scoped>
 section {
-  @apply w-full py-5 flex  px-9 items-center gap-3 border hover:shadow-xl rounded-md flex-shrink-0 hover:bg-primary-beige duration-300;
+  @apply w-full py-5 flex  px-9 items-center gap-3 border hover:shadow-lg rounded-md flex-shrink-0 hover:bg-primary-beige duration-300;
 }
 .round-icon {
   @apply rounded-full w-16 h-16 flex justify-center items-center;
+}
+.active {
+  @apply bg-primary-beige shadow-lg;
 }
 * {
   @apply cursor-pointer;

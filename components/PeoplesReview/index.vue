@@ -1,13 +1,13 @@
 <template>
-  <CommonMainFrame>
+  <CommonMainFrame center full-width>
     <template #title>People Talk About Me</template>
     <template #description>I always wanted my work to be part of a bigger self to make people's daily lives and complex app simple to use</template>
-    <template #no-margin>
-      <section id="reviews-container">
-        <div v-for="(review, index) in reviews" :key="index + 1" :id="index + 1 === currentCard ? 'current-review' : ''"><PeoplesReviewCard :review="review" /></div>
-      </section>
 
-      <!-- <div class="margin">
+    <section id="reviews-container">
+      <div v-for="(review, index) in reviews" :key="index + 1" :id="index + 1 === currentCard ? 'current-review' : ''"><PeoplesReviewCard :review="review" /></div>
+    </section>
+
+    <!-- <div class="margin">
         <section class="scroll-buttons-container">
           <button @click="swipe(Direction.LEFT)" class="bg-white">
             <Icon name="chevron-left" class="icon" />
@@ -17,7 +17,6 @@
           </button>
         </section>
       </div> -->
-    </template>
   </CommonMainFrame>
 </template>
 
@@ -110,7 +109,7 @@ watch(
 
 <style scoped>
 #reviews-container {
-  @apply flex gap-10  w-full py-16 overflow-scroll px-10;
+  @apply flex gap-10  w-full py-8 overflow-scroll px-10;
   -ms-overflow-style: none; /* Internet Explorer 10+ */
   scrollbar-width: none; /* Firefox */
   /* px-[550px] duration-500 overflow-hidden; */

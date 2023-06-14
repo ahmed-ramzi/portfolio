@@ -79,6 +79,6 @@ a[link] {
     @apply mx-auto max-w-screen-xl;
   }
   .spacing {
-    @apply py-16 space-y-10;
+    @apply py-16 space-y-16;
   }
 }
