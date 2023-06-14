@@ -1,5 +1,5 @@
 <template>
-  <CommonMainFrame center full-width>
+  <CommonMainFrame center full-width color-secondary>
     <template #title>People Talk About Me</template>
     <template #description>I always wanted my work to be part of a bigger self to make people's daily lives and complex app simple to use</template>
 

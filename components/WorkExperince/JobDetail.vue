@@ -1,6 +1,6 @@
 <template>
   <div class="flex w-full">
-    <section class="flex flex-col w-2/3">
+    <section class="flex flex-col w-[90%]">
       <div class="relative">
         <div class="absolute border-2 border-style w-12 h-12 rounded-full -right-6 -top-1 flex items-center justify-center">
           <div class="rounded-full h-7 w-7" :class="[color]"></div>

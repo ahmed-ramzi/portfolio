@@ -1,5 +1,5 @@
 <template>
-  <CommonMainFrame center>
+  <CommonMainFrame center color-secondary>
     <template #title>My Work Experience</template>
     <div>
       <WorkExperinceJobDetail v-for="exp in experiences" :key="exp.company" :exp="exp" />

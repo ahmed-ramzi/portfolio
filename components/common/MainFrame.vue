@@ -1,7 +1,7 @@
 <template>
-  <main>
+  <main :class="{ 'bg-primary-beige': colorSecondary }">
     <div class="flex flex-col w-full spacing" :class="{ margin: !fullWidth }">
-      <section class="flex" :class="[center ? 'justify-center' : 'justify-between']">
+      <section class="flex w-full" :class="[center ? 'justify-center' : 'justify-between', { margin: fullWidth }]">
         <div class="flex flex-col space-y-6" :class="{ 'text-center items-center': center }">
           <h2 class="text-slate-900"><slot name="title" /></h2>
           <div v-if="slots.description" class="max-w-xl">
@@ -23,18 +23,16 @@ withDefaults(
   defineProps<{
     fullWidth?: boolean
     center?: boolean
+    colorSecondary?: boolean
   }>(),
   {
     center: false,
     fullWidth: false,
+    colorSecondary: false,
   },
 )
 
 const slots = useSlots()
 </script>
 
-<style scoped>
-main {
-  @apply bg-primary-beige;
-}
-</style>
+<style scoped></style>

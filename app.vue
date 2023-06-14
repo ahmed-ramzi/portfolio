@@ -2,7 +2,8 @@
   <NuxtLayout>
     <Introduction />
     <WhatIDo />
-    <WorkExperince class="border" />
+    <WorkExperince />
+    <LatestWork />
     <PeoplesReview />
   </NuxtLayout>
 </template>
