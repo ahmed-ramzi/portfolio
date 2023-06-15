@@ -5,7 +5,7 @@
     <template #link>
       <a class="bg" link target="_blank" rel="noopener" href="https://github.com/ahmed-ramzi/"> Explore More Works</a>
     </template>
-    <section class="">
+    <section>
       <div class="flex items-center w-full p-2 pb-6 gap-4 overflow-scroll work-container">
         <LatestWorkPreview v-for="work in ltsWorks" :key="work.title" :work="work" />
       </div>
@@ -31,7 +31,7 @@ const ltsWorks: LatestWork[] = [
   },
   {
     title: "Notehut",
-    description: "Customized Multi-platform App",
+    description: "Customized Multi-platform Note-Taking App",
     color: "bg-primary-green",
     img: "notehut",
     imgPosition: "-rotate-6 scale-110 left-3 -bottom-7",

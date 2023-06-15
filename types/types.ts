@@ -48,3 +48,4 @@ export type IconName =
   | "firebase"
   | "mongo"
   | "hamburger"
+  | "x"

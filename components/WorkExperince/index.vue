@@ -4,7 +4,7 @@
     <div>
       <WorkExperinceJobDetail v-for="exp in experiences" :key="exp.company" :exp="exp" />
     </div>
-    <section class="text-end">
+    <section class="absolute bottom-8 right-5">
       <a link href="https://www.linkedin.com/in/ahmedramzimuthana/" target="_blank" rel="noopener" class="inline-flex items-center">
         <span> See more </span>
         <span><Icon name="chevron-right" class="w-4 h-4" /></span

@@ -18,10 +18,18 @@
           <Icon name="telephone" class="w-5 h-5 text-primary-green" />
         </div>
       </section>
-      <section class="hamburger lg:hidden">
-        <div class="white-circle">
-          <Icon name="hamburger" class="w-8 h-8 stroke-2" />
+      <section class="hamburger lg:hidden relative">
+        <div class="white-circle" @click="toggleMenu">
+          <Icon v-if="isMenuActive" name="x" class="w-6 h-6 active:rotate-180 duration-300" />
+          <Icon v-else name="hamburger" class="w-8 h-8 stroke-2 active:rotate-180 duration-300" />
         </div>
+        <section v-if="isMenuActive" class="sub-nav">
+          <ul>
+            <li v-for="l in navLinks" :key="l.key">
+              <span>{{ l.value }}</span>
+            </li>
+          </ul>
+        </section>
       </section>
     </nav>
   </header>
@@ -29,6 +37,11 @@
 
 <script lang="ts" setup>
 const navLinks = useNavLinks()
+const isMenuActive = ref(false)
+
+const toggleMenu = () => {
+  isMenuActive.value = !isMenuActive.value
+}
 </script>
 
 <style scoped>
@@ -39,7 +52,7 @@ nav {
   @apply flex items-center justify-between max-w-screen-xl mx-auto lg:px-4 py-4;
 }
 ul {
-  @apply flex items-center gap-12;
+  @apply flex flex-col lg:flex-row items-end lg:items-center gap-4 lg:gap-12;
 }
 li {
   @apply rounded-full px-6 duration-500;
@@ -50,7 +63,21 @@ li:hover {
 }
 
 li > span {
-  @apply font-caros-light  cursor-pointer uppercase bg-primary-beige ring-8 ring-primary-beige;
+  @apply font-caros-light  cursor-pointer uppercase  ring-8 ring-white lg:ring-primary-beige;
+}
+
+.sub-nav {
+  @apply bg-white absolute top-12 right-0 p-5 rounded-2xl shadow-md;
+  animation: fader 0.2s linear;
+}
+
+@keyframes fader {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .call-me {

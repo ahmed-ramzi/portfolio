@@ -1,7 +1,7 @@
 <template>
   <main>
     <section class="skills-container">
-      <div class="space-y-3 flex-shrink-0">
+      <div class="space-y-3 flex-shrink-0 md:w-72 lg:min-w-max">
         <WhatIDoCategory
           v-for="(c, index) in categories"
           :key="c.id"
@@ -10,7 +10,7 @@
           :design="c.icon.color"
           :label="c.label"
           :skills="c.techStacks.length"
-          :class="selected === index ? c.class + ' active' : null"
+          :class="selected === index ? 'ring-1 ' + c.class + ' active' : null"
         />
       </div>
       <div class="w-full space-y-3 px-2 md:px-8">
@@ -56,7 +56,7 @@ const categories: Category[] = [
     label: "Frontend Frameworks",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrudexercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nullapariatur.<br /><br />Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    class: "ring ring-primary-green",
+    class: "ring-primary-green",
     icon: {
       id: "monitor",
       color: "green",
@@ -93,7 +93,7 @@ const categories: Category[] = [
     label: "Backend Projects",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrudexercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nullapariatur.<br /><br />Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    class: "ring ring-primary-red",
+    class: "ring-primary-red",
 
     icon: {
       id: "server",
@@ -123,7 +123,7 @@ const categories: Category[] = [
     label: "QA Expertise",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrudexercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nullapariatur.<br /><br />Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    class: "ring ring-primary-yellow",
+    class: "ring-primary-yellow",
     icon: {
       id: "test",
       color: "yellow",
@@ -151,6 +151,6 @@ main {
   @apply margin spacing;
 }
 section.skills-container {
-  @apply flex flex-col-reverse md:flex-row gap-24 max-xl:px-4;
+  @apply flex flex-col-reverse  md:flex-row gap-24 max-xl:px-4;
 }
 </style>

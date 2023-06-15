@@ -47,7 +47,7 @@ section {
   @apply rounded-full w-16 h-16 flex justify-center items-center;
 }
 .active {
-  @apply bg-primary-beige shadow-lg;
+  @apply shadow-lg;
 }
 * {
   @apply cursor-pointer;

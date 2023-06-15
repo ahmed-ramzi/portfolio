@@ -12,8 +12,8 @@
           <div class="space-y-3">
             <h3 class="font-caros-bold">Information</h3>
             <address>
-              Bořivojova, Prague 13000, <br />
-              Czech Republic
+              Lehrter Str, 10557 <br />
+              Berlin
             </address>
           </div>
           <nav>
