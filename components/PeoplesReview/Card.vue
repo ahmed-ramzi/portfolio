@@ -29,7 +29,7 @@ const backgroundColor = useRandom([
 
 <style scoped>
 .review-card {
-  @apply bg-white rounded-3xl w-[540px]  h-64 shadow-xl flex-shrink-0 p-8 relative;
+  @apply bg-white rounded-3xl w-96 md:w-[540px]  md:h-64 shadow-xl flex-shrink-0 p-8 relative;
 }
 .avatar {
   @apply absolute -top-6 -inset-0.5  w-full flex justify-center drop-shadow-lg;

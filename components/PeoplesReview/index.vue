@@ -100,11 +100,11 @@ function swipe(direction: "Left" | "Right"): void {
   //   // LastDirection.value = Direction.LEFT
   // }
 }
-watch(
-  () => currentCard.value,
-  (val) => console.log(val),
-  { immediate: true },
-)
+// watch(
+//   () => currentCard.value,
+//   (val) => console.log(val),
+//   { immediate: true },
+// )
 </script>
 
 <style scoped>

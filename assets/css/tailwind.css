@@ -76,7 +76,7 @@ a[link] {
 
 @layer components {
   .margin {
-    @apply mx-auto max-w-screen-xl;
+    @apply mx-auto max-w-screen-xl px-6;
   }
   .spacing {
     @apply py-16 space-y-16;

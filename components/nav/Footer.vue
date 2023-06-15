@@ -44,7 +44,7 @@ main {
   @apply margin;
 }
 .footer-top {
-  @apply flex justify-between pt-36 pb-16 border-black border-b;
+  @apply flex flex-col md:flex-row justify-between py-16 md:pt-36 md:pb-16 border-black border-b;
 }
 .call-to-action {
   @apply space-y-24;

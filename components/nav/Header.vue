@@ -4,17 +4,23 @@
       <section>
         <Icon name="dopis" class="cursor-pointer" />
       </section>
-      <section>
+      <section class="hidden lg:block">
         <ul>
           <li v-for="l in navLinks" :key="l.key">
             <span>{{ l.value }}</span>
           </li>
         </ul>
       </section>
+
       <section class="call-me">
         <p class="hover:underline hover:text-primary-green cursor-pointer font-caros-regular font-medium text-gray-500">+420 732 727 074</p>
-        <div class="bg-white w-10 h-10 rounded-full shadow-lg flex justify-center items-center">
+        <div class="white-circle">
           <Icon name="telephone" class="w-5 h-5 text-primary-green" />
+        </div>
+      </section>
+      <section class="hamburger lg:hidden">
+        <div class="white-circle">
+          <Icon name="hamburger" class="w-8 h-8 stroke-2" />
         </div>
       </section>
     </nav>
@@ -27,7 +33,7 @@ const navLinks = useNavLinks()
 
 <style scoped>
 header {
-  @apply bg-primary-beige sticky z-20;
+  @apply bg-primary-beige sticky top-0  w-full z-20 max-xl:px-6 max-lg:border-b;
 }
 nav {
   @apply flex items-center justify-between max-w-screen-xl mx-auto lg:px-4 py-4;
@@ -48,6 +54,9 @@ li > span {
 }
 
 .call-me {
-  @apply flex items-center gap-5;
+  @apply hidden lg:flex items-center gap-5;
+}
+.white-circle {
+  @apply bg-white w-10 h-10 rounded-full shadow-lg flex justify-center items-center cursor-pointer;
 }
 </style>

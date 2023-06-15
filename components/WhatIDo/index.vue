@@ -13,12 +13,12 @@
           :class="selected === index ? c.class + ' active' : null"
         />
       </div>
-      <div class="w-full space-y-3 px-8">
+      <div class="w-full space-y-3 px-2 md:px-8">
         <h2>What Do I Help?</h2>
         <p v-html="categories[selected].description"></p>
         <div class="space-y-2">
           <h3>Tech stacks</h3>
-          <div class="flex items-center gap-5">
+          <div class="flex flex-wrap items-center gap-5">
             <div v-for="icon in categories[selected].techStacks" :key="icon.id" class="relative">
               <Icon :name="icon.id" class="w-16 h-16 cursor-pointer hover:drop-shadow-md" />
             </div>
@@ -65,6 +65,10 @@ const categories: Category[] = [
       {
         id: "vue",
         name: "Vue.Js",
+      },
+      {
+        id: "nuxt",
+        name: "Nuxt.js",
       },
       {
         id: "vite",
@@ -147,6 +151,6 @@ main {
   @apply margin spacing;
 }
 section.skills-container {
-  @apply flex gap-24 max-xl:px-4;
+  @apply flex flex-col-reverse md:flex-row gap-24 max-xl:px-4;
 }
 </style>

@@ -1,12 +1,12 @@
 <template>
-  <CommonMainFrame full-width>
+  <CommonMainFrame>
     <template #title>My Latest Works</template>
     <template #description>Perfect solution for digital experience</template>
     <template #link>
       <a class="bg" link target="_blank" rel="noopener" href="https://github.com/ahmed-ramzi/"> Explore More Works</a>
     </template>
-    <section class="overflow-scroll">
-      <div class="flex items-center w-full p-2 pb-4 gap-4 over">
+    <section class="">
+      <div class="flex items-center w-full p-2 pb-6 gap-4 overflow-scroll work-container">
         <LatestWorkPreview v-for="work in ltsWorks" :key="work.title" :work="work" />
       </div>
     </section>
@@ -63,3 +63,14 @@ const ltsWorks: LatestWork[] = [
   },
 ]
 </script>
+
+<style scoped>
+.work-container {
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+  /* px-[550px] duration-500 overflow-hidden; */
+}
+.work-container::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+</style>

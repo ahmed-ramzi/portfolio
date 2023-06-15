@@ -47,3 +47,4 @@ export type IconName =
   | "nuxt"
   | "firebase"
   | "mongo"
+  | "hamburger"
