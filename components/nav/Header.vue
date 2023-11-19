@@ -2,12 +2,14 @@
   <header>
     <nav>
       <section>
-        <Icon name="dopis" class="cursor-pointer" />
+        <nuxt-link to="/" @click="scrollToTarget('top')">
+          <Icon name="dopis" class="cursor-pointer" />
+        </nuxt-link>
       </section>
       <section class="hidden lg:block">
         <ul>
           <li v-for="l in navLinks" :key="l.key">
-            <span>{{ l.value }}</span>
+            <nuxt-link :to="`#${l.key}`" @click="scrollToTarget(l.key)">{{ l.value }}</nuxt-link>
           </li>
         </ul>
       </section>
@@ -26,7 +28,7 @@
         <section v-if="isMenuActive" class="sub-nav">
           <ul>
             <li v-for="l in navLinks" :key="l.key">
-              <span>{{ l.value }}</span>
+              <nuxt-link :to="`#${l.key}`" @click="scrollToTarget(l.key)">{{ l.value }}</nuxt-link>
             </li>
           </ul>
         </section>
@@ -36,8 +38,8 @@
 </template>
 
 <script lang="ts" setup>
-const navLinks = useNavLinks()
 const isMenuActive = ref(false)
+const { navLinks, scrollToTarget } = useNavLinks()
 
 const toggleMenu = () => {
   isMenuActive.value = !isMenuActive.value
@@ -62,7 +64,7 @@ li:hover {
   @apply ring-4 ring-primary-green text-primary-green cursor-pointer;
 }
 
-li > span {
+li > a {
   @apply font-caros-light  cursor-pointer uppercase  ring-8 ring-white lg:ring-primary-beige;
 }
 

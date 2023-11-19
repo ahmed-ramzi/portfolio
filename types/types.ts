@@ -4,6 +4,8 @@ export type Review = {
   jobTilte: string
   company: string
   comment: string
+  link: string
+  color?: "green" | "red" | "yellow"
 }
 
 export type JobExperince = {

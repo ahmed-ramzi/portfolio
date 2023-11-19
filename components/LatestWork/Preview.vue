@@ -1,13 +1,13 @@
 <template>
-  <a target="_blank" rel="noopener" :href="work.link">
-    <section class="w-[400px] h-80 rounded-xl hover:scale-105 relative hover:shadow-lg flex-shrink-0 p-10 overflow-hidden duration-300" :class="work.color">
+  <nuxt-link target="_blank" rel="noopener" :href="work.link">
+    <section class="w-[400px] h-80 rounded-xl hover:scale-105 relative hover:shadow-lg flex-shrink-0 p-10 overflow-hidden duration-300 my-6" :class="work.color">
       <div class="space-y-2">
         <h4 class="font-caros-bold text-white">{{ work.title }}</h4>
         <p class="max-w-[60%] text-sm text-white">{{ work.description }}</p>
       </div>
       <img :src="`/screenshots/${work.img}.png`" :alt="work.title" class="absolute" :class="[work.imgPosition]" />
     </section>
-  </a>
+  </nuxt-link>
 </template>
 
 <script setup lang="ts">

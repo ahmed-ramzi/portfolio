@@ -81,4 +81,12 @@ a[link] {
   .spacing {
     @apply py-16 space-y-16;
   }
+  .anchor-offset {
+    @apply relative -top-10;
+  }
+  .centered {
+    @apply fixed top-1/2 left-1/2;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+  }
 }

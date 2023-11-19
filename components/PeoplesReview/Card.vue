@@ -1,41 +1,54 @@
 <template>
-  <section class="review-card">
-    <div class="avatar">
-      <div :class="backgroundColor.color">
-        <Icon name="profile" class="w-8 h-8" />
+  <nuxt-link :to="review.link" target="_blank" rel="noopener">
+    <section class="review-card">
+      <div class="avatar">
+        <div :class="selectedColor.color">
+          <NuxtImg :src="`/people/${review.reviewer}.png`" class="rounded-full shadow-md" />
+        </div>
       </div>
-    </div>
-    <div class="review">"{{ review.comment }}"</div>
-    <div class="author">
-      <h4 class="font-caros-bold" :class="backgroundColor.text">{{ review.reviewer }}</h4>
-      <p class="text-xs text-slate-500">{{ review.jobTilte }}</p>
-    </div>
-  </section>
+      <div class="review">"{{ review.comment }}"</div>
+      <div class="author">
+        <h4 class="font-caros-bold" :class="selectedColor.text">{{ review.reviewer }}</h4>
+        <p class="text-xs text-slate-500">{{ review.jobTilte }}</p>
+      </div>
+    </section>
+  </nuxt-link>
 </template>
 
 <script lang="ts" setup>
 import type { Review } from "~~/types/types"
+type Color = {
+  key: string
+  color: string
+  text: string
+}
 
-defineProps<{
+const props = defineProps<{
   review: Review
 }>()
 
-const backgroundColor = useRandom([
-  { color: "bg-primary-yellow", text: "text-primary-yellow" },
-  { color: "bg-primary-green", text: "text-primary-green" },
-  { color: "bg-primary-red", text: "text-primary-red" },
-])
+const { getRandomItem } = useRandom()
+
+const colors: Color[] = [
+  { key: "yellow", color: "bg-primary-yellow", text: "text-primary-yellow" },
+  { key: "green", color: "bg-primary-green", text: "text-primary-green" },
+  { key: "red", color: "bg-primary-red", text: "text-primary-red" },
+]
+
+const selectedColor = computed(() => {
+  return props.review.color ? colors.find((item) => item.key === props.review.color) : getRandomItem(colors)
+})
 </script>
 
 <style scoped>
 .review-card {
-  @apply bg-white rounded-3xl w-96 md:w-[540px]  md:h-64 shadow-xl flex-shrink-0 p-8 relative;
+  @apply bg-white rounded-3xl w-96 md:w-[540px]  md:h-64 shadow-xl flex-shrink-0 p-8 relative my-10;
 }
 .avatar {
-  @apply absolute -top-6 -inset-0.5  w-full flex justify-center drop-shadow-lg;
+  @apply absolute -top-10 -inset-0.5  w-full flex justify-center drop-shadow-lg;
 }
 .avatar > div {
-  @apply w-16 h-16 rounded-full flex justify-center items-center;
+  @apply w-24 h-24 rounded-full flex justify-center items-center;
 }
 .review-card > div {
   @apply text-center;

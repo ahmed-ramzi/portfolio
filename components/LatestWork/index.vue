@@ -1,15 +1,13 @@
 <template>
-  <CommonMainFrame>
+  <CommonMainFrame name="latest-work" full-width>
     <template #title>My Latest Works</template>
     <template #description>Perfect solution for digital experience</template>
     <template #link>
       <a class="bg" link target="_blank" rel="noopener" href="https://github.com/ahmed-ramzi/"> Explore More Works</a>
     </template>
-    <section>
-      <div class="flex items-center w-full p-2 pb-6 gap-4 overflow-scroll work-container">
-        <LatestWorkPreview v-for="work in ltsWorks" :key="work.title" :work="work" />
-      </div>
-    </section>
+    <Carousel>
+      <LatestWorkPreview v-for="work in ltsWorks" :key="work.title" :work="work" />
+    </Carousel>
   </CommonMainFrame>
 </template>
 
@@ -38,39 +36,20 @@ const ltsWorks: LatestWork[] = [
     link: "https://notehut.app/",
   },
   {
-    title: "Adscientists",
-    description: "Marketing Consultant Client Website",
+    title: "Dataddo",
+    description: "Data Integration Tool App & Website",
     color: "bg-primary-cyan",
     img: "img",
     imgPosition: "class",
-    link: "",
+    link: "https://app.dataddo.com",
   },
   {
-    title: "Mainmed",
-    description: "Personal Medical Website",
+    title: "Kody",
+    description: "A lost and found app tracker",
     color: "bg-primary-red",
     img: "img",
     imgPosition: "class",
-    link: "",
-  },
-  {
-    title: "Some Website",
-    description: "Some web of something",
-    color: "bg-stone-700",
-    img: "img",
-    imgPosition: "class",
-    link: "",
+    link: "https://dataddo.com",
   },
 ]
 </script>
-
-<style scoped>
-.work-container {
-  -ms-overflow-style: none; /* Internet Explorer 10+ */
-  scrollbar-width: none; /* Firefox */
-  /* px-[550px] duration-500 overflow-hidden; */
-}
-.work-container::-webkit-scrollbar {
-  display: none; /* Safari and Chrome */
-}
-</style>

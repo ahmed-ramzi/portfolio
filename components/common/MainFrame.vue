@@ -1,5 +1,6 @@
 <template>
   <main :class="{ 'bg-primary-beige': colorSecondary }">
+    <div :id="name" class="anchor-offset"></div>
     <div class="flex flex-col w-full spacing relative" :class="{ margin: !fullWidth }">
       <section class="flex w-full" :class="[center ? 'justify-center' : ' flex-col md:flex-row justify-between', { margin: fullWidth }]">
         <div class="flex flex-col space-y-6" :class="{ 'text-center items-center': center }">
@@ -21,6 +22,7 @@
 <script setup lang="ts">
 withDefaults(
   defineProps<{
+    name: string
     fullWidth?: boolean
     center?: boolean
     colorSecondary?: boolean
@@ -34,5 +36,3 @@ withDefaults(
 
 const slots = useSlots()
 </script>
-
-<style scoped></style>

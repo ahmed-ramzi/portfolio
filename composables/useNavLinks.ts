@@ -1,15 +1,29 @@
-type Links = {
+type Link = {
   key: string
   value: string
 }
 
-const links = (): Links[] => {
-  return [
-    { key: "services", value: "Services" },
-    { key: "works", value: "Works" },
-    { key: "notes", value: "Notes" },
+export default function useNavLinks() {
+  const navLinks = [
+    { key: "what-i-do", value: "Services" },
     { key: "experience", value: "Experience" },
+    { key: "latest-work", value: "Works" },
+    { key: "peoples-review", value: "Talks" },
   ]
-}
 
-export default links
+  function scrollToTarget(key: string | "top"): void {
+    if (key === "top") {
+      window.scrollTo({ top: 0 })
+    } else {
+      const target = document.getElementById(key)
+      if (target) {
+        target.scrollIntoView()
+      }
+    }
+  }
+
+  return {
+    navLinks,
+    scrollToTarget,
+  }
+}

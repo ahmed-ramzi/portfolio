@@ -1,5 +1,6 @@
 <template>
   <main>
+    <div id="what-i-do" class="anchor-offset"></div>
     <section class="skills-container">
       <div class="space-y-3 flex-shrink-0 md:w-72 lg:min-w-max">
         <WhatIDoCategory

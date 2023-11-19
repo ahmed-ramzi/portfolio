@@ -1,4 +1,6 @@
 <template>
+  <Modal v-if="modal" @close="setModal(false)"> </Modal>
+
   <footer class="">
     <main>
       <div class="footer-top">
@@ -6,7 +8,8 @@
           <div class="max-w-[50rem]">
             <h1>Let's make something amazing together</h1>
           </div>
-          <h2 class="text-5xl font-caros-bold">Start by <a href="mailto:ah.ramzi@outlook.com" class="text-orange-700 underline">saying hi</a></h2>
+
+          <h2 class="text-5xl font-caros-bold">Start by <span @click="setModal(true)" class="cursor-pointer text-orange-700 hover:underline">saying hi</span></h2>
         </section>
         <section class="information">
           <div class="space-y-3">
@@ -19,7 +22,7 @@
           <nav>
             <ul>
               <li v-for="l in navLinks" :key="l.key">
-                <span>{{ l.value }}</span>
+                <nuxt-link @click="scrollToTarget(l.key)" :to="`#${l.key}`">{{ l.value }}</nuxt-link>
               </li>
             </ul>
           </nav>
@@ -36,7 +39,11 @@
 </template>
 
 <script lang="ts" setup>
-const navLinks = useNavLinks()
+const { navLinks, scrollToTarget } = useNavLinks()
+
+const modal = ref(false)
+
+const setModal = (action: boolean) => (modal.value = action)
 </script>
 
 <style scoped>
@@ -63,7 +70,7 @@ li:hover {
   @apply ring-4 ring-primary-green text-primary-green duration-300 cursor-pointer;
 }
 
-li > span {
+li > a {
   @apply font-caros-light  cursor-pointer uppercase ring-8 ring-white;
 }
 
