@@ -14,7 +14,7 @@
 </template>
 
 <script setup lang="ts">
-import { LatestWork } from "~/types/types"
+import type { LatestWork } from "~/types/types"
 
 defineOptions({
   name: "LatestWork",

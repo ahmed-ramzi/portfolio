@@ -3,7 +3,7 @@
 </template>
 
 <script lang="ts" setup>
-import { IconName } from "~/types/types"
+import type { IconName } from "~/types/types"
 const props = defineProps<{
   name: IconName
 }>()

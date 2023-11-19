@@ -30,7 +30,7 @@
 </template>
 
 <script setup lang="ts">
-import { IconName } from "~/types/types"
+import type { IconName } from "~/types/types"
 import Category from "./Category.vue"
 
 type Category = {

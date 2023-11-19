@@ -14,7 +14,7 @@
 </template>
 
 <script setup lang="ts">
-import { JobExperince } from "~/types/types"
+import type { JobExperince } from "~/types/types"
 
 const experiences: JobExperince[] = [
   {

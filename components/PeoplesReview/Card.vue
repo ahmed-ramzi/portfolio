@@ -14,7 +14,7 @@
 </template>
 
 <script lang="ts" setup>
-import { Review } from "~~/types/types"
+import type { Review } from "~~/types/types"
 
 defineProps<{
   review: Review

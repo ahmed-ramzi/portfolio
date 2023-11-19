@@ -34,7 +34,7 @@ export default {
 }
 </script>
 <script setup lang="ts">
-import { JobExperince } from "~/types/types"
+import type { JobExperince } from "~/types/types"
 const props = defineProps<{
   exp: JobExperince
 }>()

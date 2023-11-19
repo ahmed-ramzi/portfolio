@@ -11,7 +11,7 @@
 </template>
 
 <script setup lang="ts">
-import { IconName } from "~/types/types"
+import type { IconName } from "~/types/types"
 
 const props = withDefaults(
   defineProps<{
