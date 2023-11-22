@@ -89,4 +89,7 @@ a[link] {
     transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
   }
+  .white-circle {
+    @apply bg-white w-10 h-10 rounded-full shadow-lg flex justify-center items-center cursor-pointer;
+  }
 }

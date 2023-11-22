@@ -61,11 +61,14 @@ onUnmounted(() => {
 
 <style scoped>
 .cards-container {
-  @apply flex overflow-auto;
+  @apply flex overflow-scroll justify-center;
 }
 
 .cards {
-  @apply flex gap-10 w-full px-6;
+  @apply flex  gap-10  overflow-auto;
+}
+.cards:last-child {
+  @apply px-6 lg:px-10;
 }
 
 .dots {

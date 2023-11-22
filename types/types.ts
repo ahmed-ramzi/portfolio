@@ -51,3 +51,4 @@ export type IconName =
   | "mongo"
   | "hamburger"
   | "x"
+  | "globe"
