@@ -3,13 +3,13 @@
     <section class="review-card">
       <div class="avatar">
         <div :class="selectedColor.color">
-          <NuxtImg :src="`/people/${review.reviewer}.png`" class="rounded-full shadow-md" />
+          <NuxtImg :src="`/people/${review.id}.png`" class="rounded-full shadow-md" />
         </div>
       </div>
-      <div class="review">"{{ review.comment }}"</div>
+      <div class="review">"{{ $t(`people-reviews.reviews.${review.id}.comment`) }}"</div>
       <div class="author">
-        <h4 class="font-caros-bold" :class="selectedColor.text">{{ review.reviewer }}</h4>
-        <p class="text-xs text-slate-500">{{ review.jobTilte }}</p>
+        <h4 class="font-caros-bold" :class="selectedColor.text">{{ $t(`people-reviews.reviews.${review.id}.name`) }}</h4>
+        <p class="text-xs text-slate-500">{{ $t(`people-reviews.reviews.${review.id}.title`) }}, {{ $t(`people-reviews.reviews.${review.id}.company`) }}</p>
       </div>
     </section>
   </nuxt-link>

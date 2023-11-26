@@ -1,10 +1,6 @@
 export type Review = {
-  id: number
-  reviewer: string
-  jobTilte: string
-  company: string
-  comment: string
-  link: string
+  id: string
+  link: string | null
   color?: "green" | "red" | "yellow"
 }
 
@@ -20,10 +16,8 @@ export type JobExperince = {
 type ColorClass = "bg-primary-green" | "bg-primary-red" | "bg-primary-yellow" | "bg-stone-700" | "bg-primary-cyan"
 
 export type LatestWork = {
-  title: string
-  description: string
+  id: string
   color: ColorClass
-  img: string
   imgPosition: string
   link: string
 }
@@ -52,3 +46,9 @@ export type IconName =
   | "hamburger"
   | "x"
   | "globe"
+  | "instagram"
+  | "github"
+  | "linkedin"
+  | "en"
+  | "de"
+  | "cz"

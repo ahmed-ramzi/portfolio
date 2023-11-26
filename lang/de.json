@@ -1,0 +1,102 @@
+{
+  "nav": {
+    "what-i-do": "Dienstleistungen",
+    "experience": "Erfahrung",
+    "latest-work": "Arbeiten",
+    "peoples-review": "Bewertungen"
+  },
+  "introduction": {
+    "title": "Hallo!<br class='max-lg:hidden'>Ich bin <br>[name]",
+    "description": "Ein erfahrener Entwickler mit Fachkenntnissen sowohl in der Frontend- als auch in der Backend-Technologie.",
+    "experience": "Jahre <br />Erfahrung"
+  },
+  "what-i-do": {
+    "title": "Was ich mache",
+    "skills": "[number] Fähigkeiten",
+    "stacks": "Technologie-Stacks",
+    "frontend": {
+      "title": "Frontend-Frameworks",
+      "description": "Als Frontend-Entwickler spezialisiere ich mich auf Vue 3, Nuxt 3, Vite, Pinia für das Zustandsmanagement, Tailwind für elegantes Design und TypeScript für robusten Code. Mit Leidenschaft für die Schaffung dynamischer Web-Erlebnisse nutze ich die neuesten Technologien, um reaktionsfähige und skalierbare Anwendungen zu erstellen. Von der Beschleunigung der Entwicklung mit Vite bis zur Gestaltung stilvoller Oberflächen mit Tailwind bringe ich Ideen mit einer kooperativen und anpassungsfähigen Herangehensweise zum Leben. Lassen Sie uns gemeinsam daran arbeiten, Ihre Web-Präsenz zu verbessern und außergewöhnliche Benutzererlebnisse zu bieten. <br><br> Warum mich wählen? Mit Hingabe zur Perfektion priorisiere ich Ihre Zufriedenheit in jedem Projekt. Mit Fokus auf Kommunikation arbeite ich eng mit Kunden zusammen, um ihre Bedürfnisse zu verstehen und über Erwartungen hinauszugehen. Mit einer Anpassung an sich entwickelnde Technologien bleibe ich an vorderster Front der Branchentrends, um innovative Lösungen zu bieten. Bereit für eine Codereise zusammen? Kontaktieren Sie mich, und lassen Sie uns besprechen, wie wir Ihre Vision zum Leben erwecken können."
+    },
+    "backend": {
+      "title": "Backend-Fähigkeiten",
+      "description": "Auf der Backend-Seite spezialisiere ich mich auf TypeScript, Express.js, Firebase und MongoDB. Mit einem fundierten Verständnis für serverseitige Architektur entwickle ich robuste APIs und skalierbare Lösungen, um die dynamischen Web-Erlebnisse zu unterstützen, die ich auf der Frontend-Seite erstelle.<br><br> Backend-Expertise: Unter Verwendung der Leistung von TypeScript gewährleiste ich die Integrität Ihres Codebase und biete eine solide Grundlage für das Backend Ihrer Anwendungen. Mit Express.js erstelle ich effiziente und sichere APIs, die eine nahtlose Kommunikation zwischen Frontend und Backend ermöglichen. Ob die Echtzeitfunktionen von Firebase genutzt werden oder Daten mit MongoDB strukturiert werden, ich bringe einen umfassenden Fähigkeitssatz mit, um sicherzustellen, dass Ihr Backend genauso dynamisch und reaktionsschnell ist wie Ihr Frontend. Kontaktieren Sie mich heute, und lassen Sie uns besprechen, wie wir Ihr Frontend und Backend nahtlos integrieren können, um ein zusammenhängendes und außergewöhnliches Benutzererlebnis zu bieten."
+    },
+    "testing": {
+      "title": "Testexpertise",
+      "description": "Ich bringe umfassende Expertise ein, um die Zuverlässigkeit und Funktionalität Ihrer Anwendungen sicherzustellen. Meine Fähigkeiten erstrecken sich über eine Vielzahl von Tools, wobei der Schwerpunkt insbesondere auf Cypress liegt, wo ich ein Team bei der Bereitstellung von qualitativ hochwertigen End-to-End-Testlösungen leite. Vom robusten API-Testen mit Postman bis zum komplexen Unit-Testing mit IntelliJ verwende ich eine umfassende Teststrategie, um Ihre Codebasis zu stärken.<br><br> Testführung und Innovation: Bei der Leitung eines engagierten Teams nutze ich Cypress, um gründliche End-to-End-Tests durchzuführen und sicherzustellen, dass Ihre Anwendungen nahtlos in verschiedenen Szenarien funktionieren. Postman ist meine Wahl für sorgfältiges API-Testing, um sicherzustellen, dass Ihre Backend-Systeme genauso zuverlässig sind wie Ihr Frontend. In der Welt des Unit-Testings nutze ich die Leistung von IntelliJ, um einzelne Komponenten sorgfältig zu prüfen und zu validieren. Als Vorreiter im Bereich Testing bin ich auch an vorderster Front der sich entwickelnden Landschaft mit Vitest. Lassen Sie uns gemeinsam sicherstellen, dass Ihre Anwendungen nicht nur den höchsten Qualitätsstandards entsprechen, sondern diese übertreffen. Kontaktieren Sie mich, um zu erkunden, wie wir Ihre Testprozesse verbessern und makellose Benutzererlebnisse liefern können."
+    }
+  },
+  "my-experiences": {
+    "title": "Meine Arbeitserfahrung",
+    "more": "Mehr anzeigen",
+    "experiences": {
+      "1": {
+        "title": "Frontend-/Automatisierungstest-Leitender Entwickler",
+        "period": "Dez 2020 - Heute",
+        "company": "Dataddo",
+        "description": "-◦ Umfangreiche Erfahrung in modernen JavaScript-Frameworks und Webtechnologien<br>-◦ Expertise in der Entwicklung anspruchsvoller Algorithmen und Optimierung von Websites für SEO.<br>-◦ Expertise in TypeScript und Entwicklung robuster und skalierbarer Webanwendungen<br>-◦ Erfahrung bei der Migration von Legacy-Code und Verwendung von State-Management-Bibliotheken.<br>-◦ Expertise beim Bau mehrsprachiger Webanwendungen unter Verwendung von i18n-Bibliotheken<br>-◦ Kompetenz beim Erstellen von Testskripten und beim Aufbau von Git-Pipelines zur Unterstützung von kontinuierlicher Integration und Bereitstellung.",
+        "loaction": "Berlin"
+      },
+      "2": {
+        "title": "Solutions Engineer / Backend-Entwickler / Datenintegrations-Spezialist",
+        "period": "Dez 2020 - Aug 2021",
+        "company": "Dataddo",
+        "description": "-◦ Fortgeschrittene Erfahrung in der Backend-Entwicklung unter Verwendung moderner Technologien, einschließlich Datenbanken<br>-◦ Expertise beim Entwerfen und Erstellen skalierbarer Backend-Systeme, die komplexen Geschäftsanforderungen entsprechen<br>-◦ Wissen und Fachkenntnisse in CRUD-basierten Optionen und Anwendungen<br>-◦ Kenntnisse in Software-Design-Patterns und Prinzipien der Softwarearchitektur<br>-◦ Erfahrung in der Zusammenarbeit mit interdisziplinären Teams zur Bereitstellung von Softwarelösungen, die den Geschäftsanforderungen entsprechen<br>-◦ Kompetenz bei technischen Bewertungen, Entwurf von Teststrategien und Behebung von Softwareproblemen<br>-◦ Hervorragende Kommunikationsfähigkeiten und die Fähigkeit, technische Konzepte auch für nichttechnische Stakeholder und Kunden zu erklären",
+        "loaction": "Prag"
+      },
+      "3": {
+        "title": "Trainer & Entwickler",
+        "period": "Mai 2017 - Aug 2017",
+        "company": "KidoCode",
+        "description": "-◦ Erfahrener Trainer für junge Programmierer im Alter von 4-20 Jahren, der intensives Training in verschiedenen Programmierwerkzeugen bietet.<br>-◦ Erfahren im Einsatz von Programmierwerkzeugen wie Python, Flask, MongoDB (NoSQL), HTML, Javascript, CSS und Arduino (mit Board & C++).<br>-◦ Kompetent in der Anwendung von Mathematik- und Physikkonzepten in der Programmierung, wie Trigonometrie, Algebra und den Gesetzen von Newton, um Problemlösungen durch Codierung zu erleichtern.<br>-◦ Teilnahme am Microsoft-Event 'DigiGirlz' im Jahr 2017, in Zusammenarbeit mit KidoCode, um über 144 junge Mädchen das Codieren beizubringen und die Freude und Kreativität zu betonen, die das Codieren bieten kann.",
+        "loaction": "Malaysia"
+      }
+    }
+  },
+  "latest-work": {
+    "title": "Meine neuesten Arbeiten",
+    "description": "Perfekte Lösung für digitale Erlebnisse",
+    "explore": "Mehr Arbeiten erkunden",
+    "projects": {
+      "wagon": {
+        "title": "Wagon",
+        "description": "BVG Transport-Tracker"
+      },
+      "notehut": {
+        "title": "Notehut",
+        "description": "Individuelle plattformübergreifende Notiz-App"
+      },
+      "dataddo": {
+        "title": "Dataddo",
+        "description": "Datenintegrations-Tool-App & Website"
+      },
+      "dataddo-web": {
+        "title": "Dataddo-Website",
+        "description": "Marketing-Website für Datenintegration"
+      }
+    }
+  },
+  "people-reviews": {
+    "title": "Leute sprechen über mich",
+    "description": "Ich wollte immer, dass meine Arbeit Teil eines größeren Selbst wird, um das tägliche Leben der Menschen und komplexe Apps einfach zu gestalten",
+    "reviews": {
+      "jack": {
+        "name": "Jack Zagorski",
+        "title": "Medienkoordinator",
+        "company": "Dataddo",
+        "comment": "Ramzi sah Möglichkeiten, der Firma auf andere Weise zu helfen und wurde in seinen Anfangstagen so etwas wie ein Alleskönner."
+      }
+    }
+  },
+  "footer": {
+    "title": "Lassen Sie uns zusammen etwas Erstaunliches schaffen",
+    "description": "Beginnen Sie, indem Sie <a>hallo</a> sagen",
+    "address": {
+      "title": "Information",
+      "location": "Mitte <br />Berlin, Deutschland"
+    },
+    "rights": "Alle Rechte vorbehalten",
+    "link": "Github-Link zu dieser Website"
+  }
+}

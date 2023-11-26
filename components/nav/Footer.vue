@@ -1,49 +1,46 @@
 <template>
-  <Modal v-if="modal" @close="setModal(false)"> </Modal>
-
-  <footer class="">
+  <footer>
     <main>
       <div class="footer-top">
         <section class="call-to-action">
           <div class="max-w-[50rem]">
-            <h1>Let's make something amazing together</h1>
+            <h1>{{ $t("footer.title") }}</h1>
           </div>
-
-          <h2 class="text-5xl font-caros-bold">Start by <span @click="setModal(true)" class="cursor-pointer text-orange-700 hover:underline">saying hi</span></h2>
+          <h2
+            class="text-5xl font-caros-bold"
+            v-html="$t('footer.description').replaceAll('<a', `<a href='mailto:ah.ramzi@outlook.com' class='text-orange-700 hover:underline'`)"
+          ></h2>
         </section>
         <section class="information">
           <div class="space-y-3">
-            <h3 class="font-caros-bold">Information</h3>
-            <address>
-              Lehrter Str, 10557 <br />
-              Berlin
-            </address>
+            <h3 class="font-caros-bold">{{ $t("footer.address.title") }}</h3>
+            <address v-html="$t('footer.address.location')" />
           </div>
           <nav>
             <ul>
               <li v-for="l in navLinks" :key="l.key">
-                <nuxt-link @click="scrollToTarget(l.key)" :to="`#${l.key}`">{{ l.value }}</nuxt-link>
+                <nuxt-link :to="`#${l.key}`">{{ $t(`nav.${l.key}`) }}</nuxt-link>
               </li>
             </ul>
           </nav>
         </section>
       </div>
       <div class="footer-bottom">
-        <section>
+        <section class="flex items-center gap-3">
           <Icon name="dopis" class="cursor-pointer" />
+          <p class="pl-3 border-l border-black">{{ new Date().getFullYear() }}. {{ $t("footer.rights") }}</p>
         </section>
-        <p class="pl-10 border-l border-black">2023. All Rights Reserved</p>
+        <div class="flex gap-2 items-center hover:underline cursor-pointer">
+          <icon name="github" class="w-8 h-8" />
+          <nuxt-link target="_blank" rel="noopener" to="https://github.com/ahmed-ramzi/portfolio">{{ $t("footer.link") }}</nuxt-link>
+        </div>
       </div>
     </main>
   </footer>
 </template>
 
 <script lang="ts" setup>
-const { navLinks, scrollToTarget } = useNavLinks()
-
-const modal = ref(false)
-
-const setModal = (action: boolean) => (modal.value = action)
+const { navLinks } = useNavLinks()
 </script>
 
 <style scoped>
@@ -51,7 +48,7 @@ main {
   @apply margin;
 }
 .footer-top {
-  @apply flex flex-col md:flex-row justify-between py-16 md:pt-36 md:pb-16 border-black border-b;
+  @apply flex flex-col md:flex-row justify-between py-16 md:pt-36 md:pb-16 border-black gap-12 border-b;
 }
 .call-to-action {
   @apply space-y-24;
@@ -78,6 +75,6 @@ address {
   @apply not-italic;
 }
 .footer-bottom {
-  @apply flex items-center gap-10 py-8;
+  @apply flex flex-col md:flex-row items-center justify-between  py-8;
 }
 </style>

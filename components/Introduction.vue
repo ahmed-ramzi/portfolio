@@ -4,10 +4,10 @@
       <div class="root">
         <section class="welcome">
           <div>
-            <h1>Hey There, <br />I'm Ramzi</h1>
+            <h1 v-html="$t('introduction.title').replaceAll('[name]', 'Ramzi')"></h1>
           </div>
           <div>
-            <h4 class="text-slate-500">I develope bueatiful things, <br />and I love what I do.</h4>
+            <h4 class="text-slate-500 md:text-end max-w-sm" v-html="$t('introduction.description')"></h4>
           </div>
         </section>
 
@@ -17,19 +17,17 @@
 
         <div class="exp-years">
           <div>
-            <h1>3</h1>
+            <h1>{{ new Date().getFullYear() - 2020 }}</h1>
           </div>
           <div class="uppercase">
-            <h4>
-              Years <br />
-              Experience
-            </h4>
+            <h4 v-html="$t('introduction.experience')"></h4>
           </div>
         </div>
       </div>
     </main>
-    <div class="relative w-full flex justify-center max-lg:px-4 lg:scale-75 xl:scale-100 duration-500">
+    <div class="relative w-full flex justify-center max-lg:px-4 lg:scale-75 xl:scale-100 duration-500 max-w-screen-xl mx-auto">
       <img src="~/assets/images/splash-profile.png" alt="Ahmed Ramzi" width="800" height="600" class="lg:absolute z-0 bottom-0" />
+      <SocialMedia class="absolute right-4 md:right-12 lg:right-20 max-sm:-top-8 max-md:top-8 lg:bottom-48" />
     </div>
   </div>
 </template>

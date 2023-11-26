@@ -1,0 +1,102 @@
+{
+  "nav": {
+    "what-i-do": "Služby",
+    "experience": "Zkušenosti",
+    "latest-work": "Práce",
+    "peoples-review": "Hodnocení lidí"
+  },
+  "introduction": {
+    "title": "Ahoj! Jsem<br>[name]",
+    "description": "Zkušený vývojář s odbornými znalostmi v obou oblastech frontendu a backendu.",
+    "experience": "Roky <br />Zkušeností"
+  },
+  "what-i-do": {
+    "title": "Co dělám?",
+    "skills": "[number] dovedností",
+    "stacks": "Technologické stacky",
+    "frontend": {
+      "title": "Frontendová rámcová řešení",
+      "description": "Jako frontendový vývojář specializovaný na Vue 3, Nuxt 3, Vite, Pinia pro správu stavu, Tailwind pro elegantní design a TypeScript pro robustní kód. S vášní pro tvorbu dynamických webových zážitků využívám nejnovější technologie k vytváření responzivních a škálovatelných aplikací. Od zrychlení vývoje pomocí Vite až po vytváření stylových rozhraní s Tailwind přináším nápady k životu s kooperativním a adaptabilním přístupem. Pojďme společně pracovat na zlepšení vaší webové přítomnosti a poskytnout mimořádné uživatelské zkušenosti. <br><br> Proč mě vybrat? S oddaností k dokonalosti dávám vaší spokojenosti přednost v každém projektu. S důrazem na komunikaci úzce spolupracuji s klienty, abych porozuměl jejich potřebám a předal něco navíc než očekávají. Přizpůsobením se se vyvíjejícím se technologiím zůstávám v popředí trendů průmyslu a poskytuji moderní řešení. Jste připraveni vydat se na kódovou cestu společně? Kontaktujte mě a pojďme diskutovat o tom, jak můžeme přivést vaši vizi k životu."
+    },
+    "backend": {
+      "title": "Backendové dovednosti",
+      "description": "Na backendu se specializuji na TypeScript, Express.js, Firebase a MongoDB. S pečlivým pochopením serverové architektury tvořím robustní API a škálovatelná řešení pro podporu dynamických webových zážitků, které vytvářím na frontendu.<br><br> Backendová odbornost: Využíváním síly TypeScriptu zajistím integritu vašeho kódu a poskytnu pevný základ pro backend vašich aplikací. S Express.js budu vytvářet efektivní a bezpečná API, usnadňující plynulou komunikaci mezi frontendem a backendem. Ať už využívám reálné časové možnosti Firebase nebo strukturuji data s MongoDB, přináším komplexní soubor dovedností, abych zajistil, že váš backend bude stejně dynamický a responzivní jako váš frontend. Kontaktujte mě dnes a pojďme diskutovat o tom, jak můžeme bezproblémově integrovat váš frontend a backend pro souvislé a výjimečné uživatelské zkušenosti."
+    },
+    "testing": {
+      "title": "Odbornost v testování",
+      "description": "Přináším bohaté zkušenosti zajišťující spolehlivost a funkčnost vašich aplikací. Moje dovednosti zahrnují různé nástroje s důrazem zejména na Cypress, kde vedu tým při poskytování vysoce kvalitních řešení pro end-to-end testování. Od robustního testování API pomocí Postman po složité unit testování s IntelliJ používám komplexní strategii testování k posílení vašeho kódového základu.<br><br> Vedení a inovace v testování: Vedením odděleného týmu využívám Cypress k provedení důkladného end-to-end testování, zajišťujícího bezproblémový chod aplikací ve různých scénářích. Postman je mým nástrojem pro precizní testování API, garantující, že vaše backendové systémy jsou stejně spolehlivé jako frontend. Ve světě unit testování využívám sílu IntelliJ k pečlivému zkoumání a ověření jednotlivých komponent. Jako průkopník v oblasti testování jsem také v popředí se měnícího prostředí s Vitest. Společně zajistíme, že vaše aplikace nejen splní, ale překonají nejvyšší standardy kvality. Kontaktujte mě a prozkoumejme, jak můžeme zvýšit kvalitu vašich testovacích procesů a poskytnout bezchybné uživatelské zážitky."
+    }
+  },
+  "my-experiences": {
+    "title": "Moje pracovní zkušenosti",
+    "more": "Zobrazit více",
+    "experiences": {
+      "1": {
+        "title": "Vývojář frontendu / Automatizované testování",
+        "period": "Prosinec 2020 - Dnes",
+        "company": "Dataddo",
+        "description": "-◦ Silné zkušenosti s moderními javascriptovými frameworky a webovými technologiemi<br>-◦ Odbornost v tvorbě sofistikovaných algoritmů a optimalizaci webových stránek pro SEO.<br>-◦ Zkušenosti s TypeScriptem a tvorbou robustních a škálovatelných webových aplikací<br>-◦ Zkušenosti s migrací zděděného kódu a používání knihoven pro správu stavu.<br>-◦ Odbornost v tvorbě vícejazyčných webových aplikací pomocí i18n knihoven<br>-◦ Zkušenosti s tvorbou testovacích skriptů a vytvářením Gitových pipeline pro podporu kontinuální integrace a nasazení.",
+        "loaction": "Berlín"
+      },
+      "2": {
+        "title": "Řešitelský inženýr / Backend vývojář / Specialisté na datovou integraci",
+        "period": "Prosinec 2020 - Srpen 2021",
+        "company": "Dataddo",
+        "description": "-◦ Pokročilé zkušenosti v backend vývoji pomocí moderních technologií, včetně databází<br>-◦ Odbornost při návrhu a tvorbě škálovatelných backendových systémů, které splňují složité podnikové požadavky<br>-◦ Znalosti a odbornost s CRUD-based možnostmi a aplikacemi<br>-◦ Znalostí softwarových vzorů a principů softwarové architektury<br>-◦ Zkušenosti s spoluprací s týmy přesahujícími různé oblasti pro dodávku softwarových řešení, které splňují obchodní potřeby<br>-◦ Odbornost v provádění technických hodnocení, návrhu testovacích strategií a řešení potíží se softwarem<br>-◦ Vynikající komunikační dovednosti a schopnost vysvětlit technické koncepty i ne-technickým zúčastněným stranám a klientům",
+        "loaction": "Praha"
+      },
+      "3": {
+        "title": "Školitel a vývojář",
+        "period": "Květen 2017 - Srpen 2017",
+        "company": "KidoCode",
+        "description": "-◦ Zkušený školitel pro mladé programátory ve věku 4-20 let, poskytující intenzivní školení v různých programovacích nástrojích.<br>-◦ Zkušenosti s používáním programovacích nástrojů, jako jsou Python, Flask, MongoDB (NoSQL), HTML, Javascript, CSS a Arduino (s deskou a C++).<br>-◦ Znalost aplikace matematických a fyzikálních konceptů v programování, jako jsou trigonometrie, algebra a Newtonovy zákony, k usnadnění řešení problémů pomocí kódování.<br>-◦ Účast na události 'DigiGirlz' od Microsoftu v roce 2017, ve spolupráci s KidoCode na výuce přes 144 mladých dívek, jak programovat, a zdůraznění radosti a kreativity, kterou programování může nabídnout.",
+        "loaction": "Malajsie"
+      }
+    }
+  },
+  "latest-work": {
+    "title": "Moje poslední práce",
+    "description": "Dokonalé řešení pro digitální zážitek",
+    "explore": "Prozkoumat více prací",
+    "projects": {
+      "wagon": {
+        "title": "Vagón",
+        "description": "BVG Sledovač dopravy"
+      },
+      "notehut": {
+        "title": "Notehut",
+        "description": "Přizpůsobitelná multiplatformní aplikace pro poznámky"
+      },
+      "dataddo": {
+        "title": "Dataddo",
+        "description": "Aplikace a webová stránka pro nástroj datové integrace"
+      },
+      "dataddo-web": {
+        "title": "Webová stránka Dataddo",
+        "description": "Marketingová webová stránka pro datovou integraci"
+      }
+    }
+  },
+  "people-reviews": {
+    "title": "Lidé mluví o mně",
+    "description": "Vždy jsem chtěl, aby moje práce byla součástí většího celku, aby lidem zjednodušila každodenní život a složité aplikace usnadnila používání",
+    "reviews": {
+      "jack": {
+        "name": "Jack Zagorski",
+        "title": "Koordinátor médií",
+        "company": "Dataddo",
+        "comment": "Ramzi viděl příležitosti, jak firmě pomoci i jinými způsoby a v jejích počátcích se stal takovým druhem všehoschopného."
+      }
+    }
+  },
+  "footer": {
+    "title": "Vytvořme společně něco úžasného",
+    "description": "Začněte tím, že řeknete <a>ahoj</a>",
+    "address": {
+      "title": "Informace",
+      "location": "Mitte <br />Berlín, Německo"
+    },
+    "rights": "Všechna práva vyhrazena",
+    "link": "Odkaz na tuto webovou stránku na Githubu"
+  }
+}

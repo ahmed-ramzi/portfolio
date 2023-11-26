@@ -1,12 +1,12 @@
 <template>
   <CommonMainFrame name="latest-work" full-width>
-    <template #title>My Latest Works</template>
-    <template #description>Perfect solution for digital experience</template>
+    <template #title>{{ $t(`latest-work.title`) }}</template>
+    <template #description>{{ $t(`latest-work.description`) }}</template>
     <template #link>
-      <a class="bg" link target="_blank" rel="noopener" href="https://github.com/ahmed-ramzi/"> Explore More Works</a>
+      <a class="bg" link target="_blank" rel="noopener" href="https://github.com/ahmed-ramzi/">{{ $t(`latest-work.explore`) }}</a>
     </template>
     <Carousel>
-      <LatestWorkPreview v-for="work in ltsWorks" :key="work.title" :work="work" />
+      <LatestWorkPreview v-for="work in ltsWorks" :key="work.id" :work="work" />
     </Carousel>
   </CommonMainFrame>
 </template>
@@ -20,36 +20,34 @@ defineOptions({
 
 const ltsWorks: LatestWork[] = [
   {
-    title: "Wagon",
-    description: "BVG Transporation Tracker",
+    id: "wagon",
     color: "bg-primary-yellow",
-    img: "wagon",
     imgPosition: "-rotate-12 scale-125 left-5 -bottom-5",
     link: "https://wagon-ahmed-ramzi.vercel.app/",
   },
   {
-    title: "Notehut",
-    description: "Customized Multi-platform Note-Taking App",
+    id: "notehut",
     color: "bg-primary-green",
-    img: "notehut",
     imgPosition: "-rotate-6 scale-110 left-3 -bottom-7",
     link: "https://notehut.app/",
   },
   {
-    title: "Dataddo",
-    description: "Data Integration Tool App & Website",
+    id: "dataddo",
     color: "bg-primary-cyan",
-    img: "img",
-    imgPosition: "class",
+    imgPosition: "-rotate-6 scale-110 left-3 -bottom-7",
     link: "https://app.dataddo.com",
   },
   {
-    title: "Kody",
-    description: "A lost and found app tracker",
+    id: "dataddo-web",
     color: "bg-primary-red",
-    img: "img",
-    imgPosition: "class",
+    imgPosition: "-rotate-6 scale-110 left-3 -bottom-7",
     link: "https://dataddo.com",
   },
+  // {
+  //   id: "kody",
+  //   color: "bg-primary-red",
+  //   imgPosition: "class",
+  //   link: "https://dataddo.com",
+  // },
 ]
 </script>

@@ -6,7 +6,7 @@
 
 <style>
 .link {
-  @apply rounded-full px-6 duration-500;
+  @apply rounded-full px-6 lg:px-4 xl:px-6 duration-500;
 }
 
 .link:hover {

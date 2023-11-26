@@ -4,8 +4,8 @@
       <Icon :name="icon" class="text-white w-6 h-6" />
     </div>
     <div class="category">
-      <label class="font-caros-bold text-xl text-slate-600">{{ label }}</label>
-      <p class="leading-3 text-gray-500">{{ skills }} skills</p>
+      <label class="font-caros-bold text-xl text-slate-600">{{ $t(`what-i-do.${id}.title`) }}</label>
+      <p class="leading-3 text-gray-500">{{ $t(`what-i-do.skills`).replaceAll("[number]", `${skills}`) }}</p>
     </div>
   </section>
 </template>
@@ -15,9 +15,9 @@ import type { IconName } from "~/types/types"
 
 const props = withDefaults(
   defineProps<{
+    id: string
     design: "yellow" | "green" | "red" | "beige"
     icon: IconName
-    label: string
     skills: number
   }>(),
   {

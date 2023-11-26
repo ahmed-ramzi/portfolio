@@ -1,0 +1,102 @@
+{
+  "nav": {
+    "what-i-do": "Services",
+    "experience": "Experience",
+    "latest-work": "Works",
+    "peoples-review": "Talks"
+  },
+  "introduction": {
+    "title": "Hey There<br>I'm [name]",
+    "description": "A seasoned developer with <br>expertise in both frontend and<br>backend technologies.",
+    "experience": "Years <br />Experience"
+  },
+  "what-i-do": {
+    "title": "What I do?",
+    "skills": "[number] skills",
+    "stacks": "Tech Stacks",
+    "frontend": {
+      "title": "Frontend Frameworks",
+      "description": "A frontend developer specializing in Vue 3, Nuxt 3, Vite, Pinia for state management, Tailwind for sleek designs, and TypeScript for robust code. With a passion for creating dynamic web experiences, I leverage the latest technologies to build responsive and scalable applications. From speeding up development with Vite to crafting stylish interfaces with Tailwind, I bring ideas to life with a collaborative and adaptable approach. Let's work together to elevate your web presence and deliver exceptional user experiences.<br><br>Why choose me? With a dedication to perfection, I prioritize your satisfaction in every project. Emphasizing communication, I work closely with clients to understand their needs and deliver beyond expectations. Adapting to evolving technologies, I stay at the forefront of industry trends to provide cutting-edge solutions. Ready to embark on a coding journey together? Contact me and let's discuss how we can bring your vision to life."
+    },
+    "backend": {
+      "title": "Backend Skills",
+      "description": "On the backend, I specialize in TypeScript, Express.js, Firebase, and MongoDB. With a keen understanding of server-side architecture, I craft robust APIs and scalable solutions to power the dynamic web experiences I create on the frontend.<br><br> Backend Expertise: Leveraging the power of TypeScript, I ensure the integrity of your codebase, providing a strong foundation for the backend of your applications. With Express.js, I build efficient and secure APIs, facilitating seamless communication between the frontend and backend. Whether it's harnessing the real-time capabilities of Firebase or structuring data with MongoDB, I bring a comprehensive skill set to ensure your backend is as dynamic and responsive as your frontend. Contact me today, and let's discuss how we can seamlessly integrate your frontend and backend for a cohesive and exceptional user experience."
+    },
+    "testing": {
+      "title": "Testing Expertise",
+      "description": "I bring a wealth of expertise in ensuring the reliability and functionality of your applications. My proficiency spans a variety of tools, with a particular focus on Cypress, where I lead a team in delivering high-quality end-to-end testing solutions. From robust API testing using Postman to intricate unit testing with IntelliJ, I employ a comprehensive testing strategy to fortify your codebase.<br><br> Testing Leadership and Innovation: Guiding a dedicated team, I leverage Cypress to conduct thorough end-to-end testing, ensuring your applications perform seamlessly across diverse scenarios. Postman is my go-to for meticulous API testing, guaranteeing that your backend systems are as reliable as your frontend. In the world of unit testing, I utilize the power of IntelliJ to meticulously examine and validate individual components. As a trailblazer in testing, I'm also at the forefront of the evolving landscape with Vitest. Together, let's ensure your applications not only meet but exceed the highest standards of quality. Connect with me to explore how we can elevate your testing processes and deliver flawless user experiences."
+    }
+  },
+  "my-experiences": {
+    "title": "My Work Experience",
+    "more": "See More",
+    "experiences": {
+      "1": {
+        "title": "Frontend/ Automation Testing Head Developer",
+        "period": "Dec 2020 - Present",
+        "company": "Dataddo",
+        "description": "-◦Strong experience in modern Javascript frameworks and web technologies<br>-◦ Expertise in developing sophisticated algorithms and optimizing websites for SEO.<br>-◦ Expertise in TypeScript and developing robust and scalable web applications<br>-◦ Experience migrating legacy code and using state management libraries.<br>-◦ Expertise in building multi-language web applications using i18n libraries<br>-◦ Proficiency in building testing scripts and building Git pipelines to facilitate continuous integration and deployment.",
+        "loaction": "Berlin"
+      },
+      "2": {
+        "title": "Solutions Engineer / Backend Developer / Data Integration Specialist",
+        "period": "Dec 2020 - Aug 2021",
+        "company": "Dataddo",
+        "description": "-◦ Advance experience in backend development using modern technologies, including databases<br>-◦ Expertise in designing and building scalable backend systems that meet complex business requirements<br>-◦ Knowledge and expertise with CRUD-based options and applications<br>-◦ Knowledge of software design patterns and software architecture principles<br>-◦ Experience collaborating with cross-functional teams to deliver software solutions that meet business needs<br>-◦ Proficiency in conducting technical assessments, designing testing strategies, and troubleshooting software issues<br>-◦ Excellent communication skills and the ability to explain technical concepts to non-technical stakeholders and clients",
+        "loaction": "Prague"
+      },
+      "3": {
+        "title": "Trainer & Developer",
+        "period": "May 2017 - Aug 2017",
+        "company": "KidoCode",
+        "description": "-◦ Experienced trainer for young programmers between the ages of 4-20, providing intensive training in various programming tools.<br>-◦ Skilled in using programming tools such as Python, Flask, MongoDB (NoSQL), HTML, Javascript, CSS, and Ardunio (using the board & C++).<br>-◦ Proficient in applying Mathematics and Physics concepts in programming, such as Trigonometry, Algebra, and Newton's Laws, to facilitate problem-solving through coding.<br>-◦ Participated in Microsoft's 'DigiGirlz' event in 2017, collaborating with KidoCode to teach over 144 young girls how to code and emphasizing the fun and creativity that coding can offer.",
+        "loaction": "Malaysia"
+      }
+    }
+  },
+  "latest-work": {
+    "title": "My Latest Works",
+    "description": "Perfect solution for digital experience",
+    "explore": "Explore More Works",
+    "projects": {
+      "wagon": {
+        "title": "Wagon",
+        "description": "BVG Transporation Tracker"
+      },
+      "notehut": {
+        "title": "Notehut",
+        "description": "Customized Multi-platform Note-Taking App"
+      },
+      "dataddo": {
+        "title": "Dataddo",
+        "description": "Data Integration Tool App & Website"
+      },
+      "dataddo-web": {
+        "title": "Dataddo Website",
+        "description": "Marketing Website for Data Integration"
+      }
+    }
+  },
+  "people-reviews": {
+    "title": "People Talk About Me",
+    "description": "I always wanted my work to be part of a bigger self to make people's daily lives and complex app simple to use",
+    "reviews": {
+      "jack": {
+        "name": "Jack Zagorski",
+        "title": "Media Coordinator",
+        "company": "Dataddo",
+        "comment": "Ramzi saw opportunities to help the company in other ways and, in his early days, ended up being a kind of jack of all trades"
+      }
+    }
+  },
+  "footer": {
+    "title": "Let's make something amazing together",
+    "description": "Start by <a>saying hi</a>",
+    "address": {
+      "title": "Information",
+      "location": "Mitte <br />Berlin, Germany"
+    },
+    "rights": "All Rights Reserved",
+    "link": "Github link to this website"
+  }
+}

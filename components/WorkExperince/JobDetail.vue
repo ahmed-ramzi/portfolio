@@ -6,24 +6,26 @@
           <div class="rounded-full h-7 w-7" :class="[color]"></div>
         </div>
         <div class="hidden md:block">
-          <p class="font-main">{{ exp.company }}, {{ exp.loaction }}</p>
+          <p class="font-main">{{ $t(`my-experiences.experiences.${exp}.company`) }}, {{ $t(`my-experiences.experiences.${exp}.loaction`) }}</p>
         </div>
       </div>
 
       <div class="border-r-2 border-style md:pb-8 mt-11 md:mt-3 my-2 h-full flex flex-col">
-        <p class="hidden md:block font-secondary">{{ exp.period }}</p>
+        <p class="hidden md:block font-secondary">{{ $t(`my-experiences.experiences.${exp}.period`) }}</p>
       </div>
     </section>
 
     <section class="w-full pl-16 pb-5 space-y-6">
       <div>
-        <p class="font-main">{{ exp.title }}</p>
-        <p class="font-secondary" v-html="exp.description"></p>
+        <p class="font-main">{{ $t(`my-experiences.experiences.${exp}.title`) }}</p>
+        <p class="font-secondary" v-html="$t(`my-experiences.experiences.${exp}.description`)"></p>
       </div>
 
       <div class="md:hidden">
-        <p class="text-slate-800 font-caros-bold text-lg leading-3">~ {{ exp.company }}, {{ exp.loaction }}</p>
-        <p class="text-slate-500 font-caros-regular">{{ exp.period }}</p>
+        <p class="text-slate-800 font-caros-bold text-lg leading-3">
+          ~ {{ $t(`my-experiences.experiences.${exp}.company`) }}, {{ $t(`my-experiences.experiences.${exp}.loaction`) }}
+        </p>
+        <p class="text-slate-500 font-caros-regular">{{ $t(`my-experiences.experiences.${exp}.period`) }}</p>
       </div>
     </section>
   </div>
@@ -34,18 +36,17 @@ export default {
 }
 </script>
 <script setup lang="ts">
-import type { JobExperince } from "~/types/types"
 const props = defineProps<{
-  exp: JobExperince
+  exp: number
 }>()
 
 const color = computed(() => {
-  switch (props.exp.color) {
-    case "yellow":
+  switch (props.exp) {
+    case 1:
       return "bg-primary-yellow"
-    case "green":
+    case 2:
       return "bg-primary-green"
-    case "red":
+    case 3:
       return "bg-primary-red"
   }
 })

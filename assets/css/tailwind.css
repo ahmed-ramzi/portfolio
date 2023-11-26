@@ -92,4 +92,7 @@ a[link] {
   .white-circle {
     @apply bg-white w-10 h-10 rounded-full shadow-lg flex justify-center items-center cursor-pointer;
   }
+  .dropdown-item {
+    @apply hover:bg-primary-green bg-opacity-50;
+  }
 }
