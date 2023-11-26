@@ -8,7 +8,7 @@
           </div>
           <h2
             class="text-5xl font-caros-bold"
-            v-html="$t('footer.description').replaceAll('<a', `<a href='mailto:ah.ramzi@outlook.com' class='text-orange-700 hover:underline'`)"
+            v-html="$t('footer.description').replaceAll('<a', `<a href='mailto:ramzi.dev@outlook.com' class='text-orange-700 hover:underline'`)"
           ></h2>
         </section>
         <section class="information">
@@ -23,6 +23,10 @@
               </li>
             </ul>
           </nav>
+          <section class="follow-me">
+            <p class="font-caros-bold">{{ $t("footer.follow") }}</p>
+            <SocialMedia row />
+          </section>
         </section>
       </div>
       <div class="footer-bottom">

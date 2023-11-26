@@ -6,7 +6,7 @@
     "peoples-review": "Bewertungen"
   },
   "introduction": {
-    "title": "Hallo!<br class='max-lg:hidden'>Ich bin <br>[name]",
+    "title": "Hallo! Ich<br>bin [name]",
     "description": "Ein erfahrener Entwickler mit Fachkenntnissen sowohl in der Frontend- als auch in der Backend-Technologie.",
     "experience": "Jahre <br />Erfahrung"
   },
@@ -32,7 +32,7 @@
     "more": "Mehr anzeigen",
     "experiences": {
       "1": {
-        "title": "Frontend-/Automatisierungstest-Leitender Entwickler",
+        "title": "Frontend-/<br class='md:hidden'>Automatisierungstest-Leitender Entwickler",
         "period": "Dez 2020 - Heute",
         "company": "Dataddo",
         "description": "-◦ Umfangreiche Erfahrung in modernen JavaScript-Frameworks und Webtechnologien<br>-◦ Expertise in der Entwicklung anspruchsvoller Algorithmen und Optimierung von Websites für SEO.<br>-◦ Expertise in TypeScript und Entwicklung robuster und skalierbarer Webanwendungen<br>-◦ Erfahrung bei der Migration von Legacy-Code und Verwendung von State-Management-Bibliotheken.<br>-◦ Expertise beim Bau mehrsprachiger Webanwendungen unter Verwendung von i18n-Bibliotheken<br>-◦ Kompetenz beim Erstellen von Testskripten und beim Aufbau von Git-Pipelines zur Unterstützung von kontinuierlicher Integration und Bereitstellung.",
@@ -97,6 +97,7 @@
       "location": "Mitte <br />Berlin, Deutschland"
     },
     "rights": "Alle Rechte vorbehalten",
-    "link": "Github-Link zu dieser Website"
+    "link": "Github-Link zu dieser Website",
+    "follow": "Folgen Sie mir auf"
   }
 }

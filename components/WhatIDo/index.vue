@@ -14,7 +14,7 @@
           :class="selected.id === c.id ? 'ring-1 ' + c.class + ' active' : null"
         />
       </div>
-      <div class="w-full space-y-3 px-2 md:px-8">
+      <div class="w-full space-y-3">
         <h2>{{ $t(`what-i-do.title`) }}</h2>
         <p v-html="$t(`what-i-do.${selected.id}.description`)"></p>
         <div class="space-y-2">

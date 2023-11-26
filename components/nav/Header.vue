@@ -18,12 +18,12 @@
           </template>
         </ul>
       </section>
-      <div class="flex items-center gap-4">
+      <div class="flex items-center gap-2">
         <div v-if="isLargeScreen" class="flex items-center gap-4">
           <div class="cursor-pointer relative">
             <div class="hover:underline flex items-center gap-2" @click="toggleLangMenu">
-              <Icon name="globe" class="w-5 h-5 text-gray-500" />
-              <p class="text-gray-500 uppercase">{{ locale }}</p>
+              <Icon name="globe" class="w-5 h-5" />
+              <p class="uppercase">{{ locale }}</p>
             </div>
             <NavLangs v-if="isLangMenuActice" @close="isLangMenuActice = false" />
           </div>

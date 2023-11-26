@@ -15,9 +15,9 @@
       </div>
     </section>
 
-    <section class="w-full pl-16 pb-5 space-y-6">
+    <section class="w-full pl-8 md:pl-16 pb-5 space-y-6">
       <div>
-        <p class="font-main">{{ $t(`my-experiences.experiences.${exp}.title`) }}</p>
+        <p class="font-main" v-html="$t(`my-experiences.experiences.${exp}.title`)"></p>
         <p class="font-secondary" v-html="$t(`my-experiences.experiences.${exp}.description`)"></p>
       </div>
 

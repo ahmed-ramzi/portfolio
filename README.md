@@ -1,6 +1,6 @@
-# Nuxt 3 Minimal Starter
+# My Portfolio Website
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+You can visit the [Production Link](https://ahmedramzi.dev) to view my website.
 
 ## Setup
 
@@ -38,5 +38,3 @@ Locally preview production build:
 ```bash
 npm run preview
 ```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
