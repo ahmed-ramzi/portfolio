@@ -1,6 +1,6 @@
 <template>
   <CommonMainFrame name="experience" center color-secondary>
-    <template #title>My Work Experience</template>
+    <template #title>{{ $t("my-experiences.title") }}</template>
     <div>
       <WorkExperinceJobDetail v-for="id in 3" :key="id" :exp="id" />
     </div>
