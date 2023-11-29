@@ -1,6 +1,6 @@
 <template>
   <nuxt-link target="_blank" rel="noopener" :href="work.link">
-    <section class="w-[400px] h-80 rounded-xl hover:scale-105 relative hover:shadow-lg flex-shrink-0 p-10 overflow-hidden duration-300 my-6" :class="work.color">
+    <section class="w-[400px] h-80 rounded-xl relative hover:shadow-lg flex-shrink-0 p-10 overflow-hidden duration-300 my-6" :class="work.color">
       <div class="space-y-2">
         <h4 class="font-caros-bold text-white">{{ $t(`latest-work.projects.${work.id}.title`) }}</h4>
         <p class="max-w-[60%] text-sm text-white">{{ $t(`latest-work.projects.${work.id}.description`) }}</p>

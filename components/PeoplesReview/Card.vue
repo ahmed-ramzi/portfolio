@@ -42,7 +42,7 @@ const selectedColor = computed(() => {
 
 <style scoped>
 .review-card {
-  @apply bg-white rounded-3xl w-96 md:w-[540px]  md:h-64 shadow-xl flex-shrink-0 p-8 relative my-10;
+  @apply bg-white rounded-3xl w-96 md:w-[540px]  md:h-64 shadow-md hover:shadow-xl flex-shrink-0 p-8 relative my-10 duration-300;
 }
 .avatar {
   @apply absolute -top-10 -inset-0.5  w-full flex justify-center drop-shadow-lg;
