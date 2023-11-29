@@ -9,7 +9,7 @@
       <div class="review">"{{ $t(`people-reviews.reviews.${review.id}.comment`) }}"</div>
       <div class="author">
         <h4 class="font-caros-bold" :class="selectedColor.text">{{ $t(`people-reviews.reviews.${review.id}.name`) }}</h4>
-        <p class="text-xs text-slate-500">{{ $t(`people-reviews.reviews.${review.id}.title`) }}, {{ $t(`people-reviews.reviews.${review.id}.company`) }}</p>
+        <p class="text-xs text-slate-500">{{ $t(`people-reviews.reviews.${review.id}.title`) }}</p>
       </div>
     </section>
   </nuxt-link>

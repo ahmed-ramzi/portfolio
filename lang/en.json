@@ -86,6 +86,11 @@
         "title": "Media Coordinator",
         "company": "Dataddo",
         "comment": "Ramzi saw opportunities to help the company in other ways and, in his early days, ended up being a kind of jack of all trades"
+      },
+      "sayaghi": {
+        "name": "Mohammed Al-Sayaghi",
+        "comment": "I had the pleasure of working with him on a project, and his dedication, analytical skills, and innovative approach truly set him apart",
+        "title": "Chemical Engineer"
       }
     }
   },
@@ -94,7 +99,7 @@
     "description": "Start by <a>saying hi</a>",
     "address": {
       "title": "Information",
-      "location": "Mitte <br />Berlin, Germany"
+      "location": "Karlín <br />Prague, Czech Republic"
     },
     "rights": "All Rights Reserved",
     "link": "Github link to this website",

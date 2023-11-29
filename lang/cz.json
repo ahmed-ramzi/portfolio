@@ -86,6 +86,11 @@
         "title": "Koordinátor médií",
         "company": "Dataddo",
         "comment": "Ramzi viděl příležitosti, jak firmě pomoci i jinými způsoby a v jejích počátcích se stal takovým druhem všehoschopného."
+      },
+      "sayaghi": {
+        "comment": "Měl jsem to potěšení s ním pracovat na projektu a jeho oddanost, analytické schopnosti a inovativní přístup ho skutečně odlišovaly",
+        "name": "Mohammed Al-Sayaghi",
+        "title": "Chemický inženýr"
       }
     }
   },
@@ -94,7 +99,7 @@
     "description": "Začněte tím, že řeknete <a>ahoj</a>",
     "address": {
       "title": "Informace",
-      "location": "Mitte <br />Berlín, Německo"
+      "location": "Karlín <br />Praha, Česká republika"
     },
     "rights": "Všechna práva vyhrazena",
     "link": "Odkaz na tuto webovou stránku na Githubu",

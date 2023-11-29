@@ -86,6 +86,11 @@
         "title": "Medienkoordinator",
         "company": "Dataddo",
         "comment": "Ramzi sah Möglichkeiten, der Firma auf andere Weise zu helfen und wurde in seinen Anfangstagen so etwas wie ein Alleskönner."
+      },
+      "sayaghi": {
+        "comment": "Ich hatte das Vergnügen, mit ihm an einem Projekt zu arbeiten, und sein Engagement, seine analytischen Fähigkeiten und sein innovativer Ansatz zeichnen ihn wirklich aus",
+        "name": "Mohammed Al-Sayaghi",
+        "title": "Chemieingenieur"
       }
     }
   },
@@ -94,7 +99,7 @@
     "description": "Beginnen Sie, indem Sie <a>hallo</a> sagen",
     "address": {
       "title": "Information",
-      "location": "Mitte <br />Berlin, Deutschland"
+      "location": "Karlín <br />Prag, Tschechische Republik"
     },
     "rights": "Alle Rechte vorbehalten",
     "link": "Github-Link zu dieser Website",

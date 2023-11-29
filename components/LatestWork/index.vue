@@ -28,7 +28,7 @@ const ltsWorks: LatestWork[] = [
   {
     id: "notehut",
     color: "bg-primary-green",
-    imgPosition: "-rotate-6 scale-110 left-3 -bottom-7",
+    imgPosition: "-rotate-6 scale-110 left-3 -bottom-9",
     link: "https://notehut.app/",
   },
   {

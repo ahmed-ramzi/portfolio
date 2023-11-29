@@ -1,6 +1,6 @@
 export type Review = {
   id: string
-  link: string | null
+  link: string
   color?: "green" | "red" | "yellow"
 }
 
