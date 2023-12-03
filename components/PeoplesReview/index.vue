@@ -13,14 +13,20 @@ import type { Review } from "~~/types/types"
 
 const reviews = <Review[]>[
   {
+    id: "jack",
+    link: "https://blog.dataddo.com/career-progression-at-dataddo",
+    color: "yellow",
+  },
+  {
     id: "sayaghi",
     link: "https://www.linkedin.com/in/ahmedramzimuthana/details/recommendations/",
     color: "green",
   },
+
   {
-    id: "jack",
-    link: "https://blog.dataddo.com/career-progression-at-dataddo",
-    color: "yellow",
+    id: "osama",
+    link: "https://www.linkedin.com/in/ahmedramzimuthana/details/recommendations/",
+    color: "red",
   },
 ]
 </script>

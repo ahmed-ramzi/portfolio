@@ -55,7 +55,7 @@ onUnmounted(() => {
 
 <style scoped>
 main {
-  @apply pt-16 pb-3 lg:py-24 relative;
+  @apply pt-4 xl:pt-16 pb-3 lg:py-24 relative;
 }
 
 @media (max-height: 640px) {

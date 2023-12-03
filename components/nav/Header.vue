@@ -42,6 +42,10 @@ const { navLinks } = useNavLinks()
 
 const isLangMenuActice = ref(false)
 
+const { locale } = useI18n()
+const { availableLocales } = useLangOptions()
+const switchLocalePath = useSwitchLocalePath()
+
 const width = ref(0)
 let observer: ResizeObserver | null = null
 
@@ -58,12 +62,6 @@ onUnmounted(() => {
   if (observer) {
     observer.disconnect()
   }
-})
-const { locale, locales } = useI18n()
-const switchLocalePath = useSwitchLocalePath()
-
-const availableLocales = computed(() => {
-  return locales.value.filter((i) => i.code !== locale.value)
 })
 
 const isLargeScreen = computed((): boolean => {

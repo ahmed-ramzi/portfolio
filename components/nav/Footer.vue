@@ -10,11 +10,19 @@
             class="text-5xl font-caros-bold"
             v-html="$t('footer.description').replaceAll('<a', `<a href='mailto:ramzi.dev@outlook.com' class='text-orange-700 hover:underline'`)"
           ></h2>
+          <div>
+            <p class="text-2xl font-medium">{{ $t(`footer.speakToMe`) }}</p>
+            <div class="flex items-center gap-6">
+              <NuxtLink v-for="locale in availableLocales" :to="switchLocalePath(locale.code)">
+                <icon :name="locale.code" class="w-16 h-16 hover:drop-shadow-xl" />
+              </NuxtLink>
+            </div>
+          </div>
         </section>
         <section class="information">
           <div class="space-y-3">
             <h3 class="font-caros-bold">{{ $t("footer.address.title") }}</h3>
-            <address v-html="$t('footer.address.location')" />
+            <address class="text-xl" v-html="$t('footer.address.location')" />
           </div>
           <nav>
             <ul>
@@ -45,6 +53,8 @@
 
 <script lang="ts" setup>
 const { navLinks } = useNavLinks()
+const { availableLocales } = useLangOptions()
+const switchLocalePath = useSwitchLocalePath()
 </script>
 
 <style scoped>

@@ -91,6 +91,11 @@
         "name": "Mohammed Al-Sayaghi",
         "comment": "I had the pleasure of working with him on a project, and his dedication, analytical skills, and innovative approach truly set him apart",
         "title": "Chemical Engineer"
+      },
+      "osama": {
+        "name": "Osama Khaled",
+        "comment": "His deep understanding and knowledge of the field truly set him apart. Collaborating with him has been a breeze, thanks to his expertise and effective communication.",
+        "title": "Content Creator / Video Editor / Filmmaker"
       }
     }
   },
@@ -103,6 +108,7 @@
     },
     "rights": "All Rights Reserved",
     "link": "Github link to this website",
-    "follow": "Follow me on"
+    "follow": "Follow me on",
+    "speakToMe": "You can also read about me in your own language"
   }
 }

@@ -91,6 +91,11 @@
         "comment": "Ich hatte das Vergnügen, mit ihm an einem Projekt zu arbeiten, und sein Engagement, seine analytischen Fähigkeiten und sein innovativer Ansatz zeichnen ihn wirklich aus",
         "name": "Mohammed Al-Sayaghi",
         "title": "Chemieingenieur"
+      },
+      "osama": {
+        "comment": "Sein tiefes Verständnis und seine Fachkenntnis zeichnen ihn wirklich aus. \nDank seines Fachwissens und seiner effektiven Kommunikation war die Zusammenarbeit mit ihm ein Kinderspiel.",
+        "name": "Osama Khaled",
+        "title": "Inhaltsersteller / Videoeditor / Filmemacher"
       }
     }
   },
@@ -103,6 +108,7 @@
     },
     "rights": "Alle Rechte vorbehalten",
     "link": "Github-Link zu dieser Website",
-    "follow": "Folgen Sie mir auf"
+    "follow": "Folgen Sie mir auf",
+    "speakToMe": "Sie können auch in Ihrer eigenen Sprache über mich lesen"
   }
 }

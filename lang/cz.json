@@ -60,7 +60,7 @@
     "explore": "Prozkoumat více prací",
     "projects": {
       "wagon": {
-        "title": "Vagón",
+        "title": "Wagon",
         "description": "BVG Sledovač dopravy"
       },
       "notehut": {
@@ -91,6 +91,11 @@
         "comment": "Měl jsem to potěšení s ním pracovat na projektu a jeho oddanost, analytické schopnosti a inovativní přístup ho skutečně odlišovaly",
         "name": "Mohammed Al-Sayaghi",
         "title": "Chemický inženýr"
+      },
+      "osama": {
+        "comment": "Jeho hluboké porozumění a znalost oboru ho opravdu vyzdvihují. Spolupráce s ním byla hladká díky jeho odbornosti a efektivní komunikaci.",
+        "name": "Osama Khaled",
+        "title": "Tvůrce obsahu / Videoeditor / Filmař"
       }
     }
   },
@@ -103,6 +108,7 @@
     },
     "rights": "Všechna práva vyhrazena",
     "link": "Odkaz na tuto webovou stránku na Githubu",
-    "follow": "Sledujte mě na"
+    "follow": "Sledujte mě na",
+    "speakToMe": "Můžete si o mně přečíst také ve svém jazyce"
   }
 }

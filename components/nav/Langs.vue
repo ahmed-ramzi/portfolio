@@ -10,10 +10,6 @@
 <script setup lang="ts">
 defineEmits(["close"])
 
-const { locale, locales } = useI18n()
 const switchLocalePath = useSwitchLocalePath()
-
-const availableLocales = computed(() => {
-  return locales.value.filter((i) => i.code !== locale.value)
-})
+const { availableLocales } = useLangOptions()
 </script>
