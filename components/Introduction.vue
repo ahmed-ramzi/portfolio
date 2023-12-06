@@ -17,7 +17,7 @@
 
         <div class="exp-years">
           <div>
-            <h1>{{ new Date().getFullYear() - 2020 }}</h1>
+            <h1>{{ new Date().getFullYear() - 2018 }}</h1>
           </div>
           <div class="uppercase">
             <h4 v-html="$t('introduction.experience')"></h4>
