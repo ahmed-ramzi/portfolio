@@ -33,6 +33,7 @@ const colors: Color[] = [
   { key: "yellow", color: "bg-primary-yellow", text: "text-primary-yellow" },
   { key: "green", color: "bg-primary-green", text: "text-primary-green" },
   { key: "red", color: "bg-primary-red", text: "text-primary-red" },
+  { key: "black", color: "bg-slate-800", text: "text-slate-800" },
 ]
 
 const selectedColor = computed(() => {
@@ -42,7 +43,7 @@ const selectedColor = computed(() => {
 
 <style scoped>
 .review-card {
-  @apply bg-white rounded-3xl w-96 md:w-[540px]  md:h-64 shadow-md hover:shadow-xl flex-shrink-0 p-8 relative my-10 duration-300;
+  @apply bg-white rounded-3xl w-96 h-72 md:w-[540px]  md:h-64 shadow-md hover:shadow-xl flex-shrink-0 p-8 relative my-10 duration-300;
 }
 .avatar {
   @apply absolute -top-10 -inset-0.5  w-full flex justify-center drop-shadow-lg;
@@ -54,7 +55,7 @@ const selectedColor = computed(() => {
   @apply text-center;
 }
 .review {
-  @apply border-b border-gray-300 pb-4 pt-8;
+  @apply border-b border-gray-300 pb-4 pt-8 h-[70%];
 }
 .author {
   @apply pt-4;

@@ -84,7 +84,6 @@
       "jack": {
         "name": "Jack Zagorski",
         "title": "Medienkoordinator",
-        "company": "Dataddo",
         "comment": "Ramzi sah Möglichkeiten, der Firma auf andere Weise zu helfen und wurde in seinen Anfangstagen so etwas wie ein Alleskönner."
       },
       "sayaghi": {
@@ -96,6 +95,16 @@
         "comment": "Sein tiefes Verständnis und seine Fachkenntnis zeichnen ihn wirklich aus. \nDank seines Fachwissens und seiner effektiven Kommunikation war die Zusammenarbeit mit ihm ein Kinderspiel.",
         "name": "Osama Khaled",
         "title": "Inhaltsersteller / Videoeditor / Filmemacher"
+      },
+      "asad": {
+        "comment": "Sein fundiertes technisches Wissen in Kombination mit seiner kreativen Denkweise und seiner starken Arbeitsmoral wird für jedes Team/jede Organisation von großem Nutzen sein.",
+        "name": "Asad Ali",
+        "title": "Datenwissenschaftler"
+      },
+      "org": {
+        "comment": "Ramzi verfügt über Fachkenntnisse in modernen Javascript-Frameworks, der Entwicklung anspruchsvoller Algorithmen, der Optimierung von Websites für SEO und TypeScript",
+        "name": "Die Org",
+        "title": "Persönliche Biografie"
       }
     }
   },

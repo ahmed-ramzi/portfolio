@@ -84,7 +84,6 @@
       "jack": {
         "name": "Jack Zagorski",
         "title": "Media Coordinator",
-        "company": "Dataddo",
         "comment": "Ramzi saw opportunities to help the company in other ways and, in his early days, ended up being a kind of jack of all trades"
       },
       "sayaghi": {
@@ -96,6 +95,16 @@
         "name": "Osama Khaled",
         "comment": "His deep understanding and knowledge of the field truly set him apart. Collaborating with him has been a breeze, thanks to his expertise and effective communication.",
         "title": "Content Creator / Video Editor / Filmmaker"
+      },
+      "org": {
+        "name": "The Org",
+        "comment": "Ramzi has expertise in modern Javascript frameworks, developing sophisticated algorithms, optimizing websites for SEO, and TypeScript",
+        "title": "Personal Bio"
+      },
+      "asad": {
+        "name": "Asad Ali",
+        "comment": "His sound technical knowledge combined with his creative mindset and strong work ethic will be a great asset to any team/organisation.",
+        "title": "Data Scientist"
       }
     }
   },

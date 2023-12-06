@@ -83,19 +83,28 @@
     "reviews": {
       "jack": {
         "name": "Jack Zagorski",
-        "title": "Koordinátor médií",
-        "company": "Dataddo",
+        "title": "Koordinátor Médií",
         "comment": "Ramzi viděl příležitosti, jak firmě pomoci i jinými způsoby a v jejích počátcích se stal takovým druhem všehoschopného."
       },
       "sayaghi": {
         "comment": "Měl jsem to potěšení s ním pracovat na projektu a jeho oddanost, analytické schopnosti a inovativní přístup ho skutečně odlišovaly",
         "name": "Mohammed Al-Sayaghi",
-        "title": "Chemický inženýr"
+        "title": "Chemický Inženýr"
       },
       "osama": {
         "comment": "Jeho hluboké porozumění a znalost oboru ho opravdu vyzdvihují. Spolupráce s ním byla hladká díky jeho odbornosti a efektivní komunikaci.",
         "name": "Osama Khaled",
-        "title": "Tvůrce obsahu / Videoeditor / Filmař"
+        "title": "Tvůrce Obsahu / Videoeditor / Filmař"
+      },
+      "asad": {
+        "comment": "Jeho dobré technické znalosti v kombinaci s kreativním myšlením a silnou pracovní morálkou budou velkým přínosem pro každý tým/organizaci.",
+        "name": "Asad Ali",
+        "title": "Datový Vědec"
+      },
+      "org": {
+        "comment": "Ramzi má zkušenosti s moderními frameworky Javascriptu, vývojem sofistikovaných algoritmů, optimalizací webových stránek pro SEO a jazykem TypeScript.",
+        "name": "The Org",
+        "title": "Osobní Životopis"
       }
     }
   },

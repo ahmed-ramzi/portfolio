@@ -28,5 +28,15 @@ const reviews = <Review[]>[
     link: "https://www.linkedin.com/in/ahmedramzimuthana/details/recommendations/",
     color: "red",
   },
+  {
+    id: "org",
+    link: "https://theorg.com/org/dataddo/org-chart/ing-ahmed-ramzi-muthana",
+    color: "black",
+  },
+  {
+    id: "asad",
+    link: "https://www.linkedin.com/in/ahmedramzimuthana/details/recommendations/",
+    color: "yellow",
+  },
 ]
 </script>

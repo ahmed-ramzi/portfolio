@@ -22,8 +22,8 @@
         <div v-if="isLargeScreen" class="flex items-center gap-4">
           <div class="cursor-pointer relative">
             <div class="hover:underline flex items-center gap-2" @click="toggleLangMenu">
-              <Icon name="globe" class="w-5 h-5" />
-              <p class="uppercase">{{ locale }}</p>
+              <Icon name="globe" class="w-5 h-5 text-slate-500" />
+              <p class="uppercase font-caros-regular text-slate-500">{{ locale }}</p>
             </div>
             <NavLangs v-if="isLangMenuActice" @close="isLangMenuActice = false" />
           </div>
