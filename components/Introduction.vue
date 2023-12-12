@@ -5,7 +5,7 @@
         <section class="welcome">
           <div class="w-full">
             <h1 v-html="$t('introduction.title').replaceAll('[name]', 'Ramzi')"></h1>
-            <h2 class="text-4xl font-caros-regular w-full">
+            <h2 class="text-4xl font-caros-light tracking-tighter w-full">
               <SlideInText />
             </h2>
           </div>

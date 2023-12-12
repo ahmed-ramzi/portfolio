@@ -44,7 +44,7 @@ onBeforeUnmount(() => {
   /* margin-top: var(--offset); */
 }
 .mask span {
-  @apply block absolute top-10 whitespace-nowrap min-w-max lg:pb-[1px];
+  @apply block absolute top-10 whitespace-nowrap min-w-max pb-[1px];
   box-sizing: border-box;
   background-size: 100% 100%;
   -webkit-background-clip: text;
