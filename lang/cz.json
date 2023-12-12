@@ -8,7 +8,14 @@
   "introduction": {
     "title": "Ahoj! Jsem<br>[name]",
     "description": "Zkušený vývojář s odbornými znalostmi v obou oblastech frontendu a backendu.",
-    "experience": "Roky <br />Zkušeností"
+    "experience": "Roky <br />Zkušeností",
+    "movingTitle": {
+      "fullstack": "Full-Stack vývojář",
+      "vue": "Fanoušek Vue.Js",
+      "node": "Milovník Expressu",
+      "cypress": "Odborník na Cypress",
+      "engineer": "Softwarový inženýr"
+    }
   },
   "what-i-do": {
     "title": "Co dělám?",

@@ -8,7 +8,14 @@
   "introduction": {
     "title": "Hallo! Ich<br>bin [name]",
     "description": "Ein erfahrener Entwickler mit Fachkenntnissen sowohl in der Frontend- als auch in der Backend-Technologie.",
-    "experience": "Jahre <br />Erfahrung"
+    "experience": "Jahre <br />Erfahrung",
+    "movingTitle": {
+      "fullstack": "Full-Stack Entwickler",
+      "vue": "Vue.js Enthusiast",
+      "node": "Express Liebhaber",
+      "cypress": "Cypress Experte",
+      "engineer": "Softwareentwickler"
+    }
   },
   "what-i-do": {
     "title": "Was ich mache",

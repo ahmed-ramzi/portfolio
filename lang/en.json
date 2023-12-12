@@ -7,8 +7,15 @@
   },
   "introduction": {
     "title": "Hey There<br>I'm [name]",
-    "description": "A seasoned developer with <br>expertise in both frontend and<br>backend technologies.",
-    "experience": "Years <br />Experience"
+    "description": "A seasoned developer with expertise in both frontend and backend technologies.",
+    "experience": "Years <br />Experience",
+    "movingTitle": {
+      "fullstack": "Full-Stack Developer",
+      "vue": "Vue.Js Enthusiast",
+      "node": "Express Lover",
+      "cypress": "Cypress Expert",
+      "engineer": "Software Engineer"
+    }
   },
   "what-i-do": {
     "title": "What I do?",

@@ -3,11 +3,14 @@
     <main>
       <div class="root">
         <section class="welcome">
-          <div>
+          <div class="w-full">
             <h1 v-html="$t('introduction.title').replaceAll('[name]', 'Ramzi')"></h1>
+            <h2 class="text-4xl font-caros-regular w-full">
+              <SlideInText />
+            </h2>
           </div>
-          <div>
-            <h4 class="text-slate-500 md:text-end max-w-sm" v-html="$t('introduction.description')"></h4>
+          <div class="flex-shrink-0">
+            <p class="text-slate-500 leading-6 md:text-end max-w-sm" v-html="$t('introduction.description')"></p>
           </div>
         </section>
 
@@ -26,7 +29,7 @@
       </div>
       <div class="absolute bottom-0 w-full">
         <div class="relative w-full flex justify-center max-lg:px-4 lg:scale-75 xl:scale-100 duration-500 max-w-screen-xl mx-auto">
-          <img src="~/assets/images/splash-profile.png" alt="Ahmed Ramzi" width="800" height="600" class="lg:absolute my-image z-0 bottom-0" />
+          <img src="~/assets/images/splash-profile.png" alt="Ahmed Ramzi" width="750" height="550" class="lg:absolute my-image z-0 bottom-0" />
           <SocialMedia class="social absolute right-4 md:right-8 -top-44 md:top-24 lg:-top-96" />
         </div>
       </div>
@@ -79,7 +82,7 @@ main {
   @apply margin space-y-32 md:px-10 xl:px-0;
 }
 .welcome {
-  @apply flex flex-col md:flex-row md:justify-between md:items-center;
+  @apply flex flex-col md:flex-row md:justify-between md:items-center w-full gap-4;
 }
 .exp-years {
   @apply hidden lg:flex gap-4 items-center;
