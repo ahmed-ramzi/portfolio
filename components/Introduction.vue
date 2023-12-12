@@ -14,9 +14,9 @@
           </div>
         </section>
 
-        <div class="hidden lg:block">
+        <!-- <div class="hidden lg:block">
           <a href="mailto:ramzi.dev@outlook.com" class="text-orange-700 text-lg font-bold underline"> ramzi.dev@outlook.com </a>
-        </div>
+        </div> -->
 
         <div class="exp-years">
           <div>
@@ -58,7 +58,7 @@ onUnmounted(() => {
 
 <style scoped>
 main {
-  @apply pt-4 xl:pt-16 pb-3 lg:py-24 relative;
+  @apply pt-4 xl:pt-16 pb-3 lg:py-24 relative lg:h-[700px];
 }
 
 @media (max-height: 640px) {
@@ -75,7 +75,7 @@ main {
 @media (max-width: 1023px) {
   main {
     @apply overflow-hidden;
-    height: calc(100vh - 83px);
+    height: calc(100vh - 120px);
   }
 }
 .root {
