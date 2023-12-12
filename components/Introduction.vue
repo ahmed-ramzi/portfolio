@@ -75,7 +75,7 @@ main {
 @media (max-width: 1023px) {
   main {
     @apply overflow-hidden;
-    height: calc(100vh - 120px);
+    height: calc(100vh - 83px);
   }
 }
 .root {
